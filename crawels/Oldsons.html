@@ -1,0 +1,1211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0024)https://www.gushiwen.cn/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" nighteye="disabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="Cache-Control" content="no-siteapp"><meta http-equiv="Cache-Control" content="no-transform "><title>
+	古诗文网-古诗文经典传承
+</title><meta name="description" content="古诗文网作为传承经典的网站专注于古诗文服务，致力于让古诗文爱好者更便捷地发表及获取古诗文相关资料。">
+    <script src="./Oldsons_files/hm.js.下载"></script><script type="text/javascript">
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "https://m.gushiwen.cn/default_1.aspx";
+        }
+        else {
+
+        }
+</script>
+    <link href="./Oldsons_files/skinSo20220909.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        //取得cookie值
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+            if (arr = document.cookie.match(reg))
+
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+
+        //判断收藏
+        function selectLike(id) {
+            document.getElementById('likeImg' + id).name = parseInt(document.getElementById('likeImg' + id).name) + 1;
+            if (document.getElementById('likeImg' + id).name == '1') {
+                var idsShigeLaiyo = getCookie('idsShiwen2017');
+                if (idsShigeLaiyo != null && idsShigeLaiyo != '') {
+                    var ids = idsShigeLaiyo.split(',');
+                    for (var i = 0; i < ids.length; i++) {
+                        if (ids[i] == id) {
+                            document.getElementById('likeImg' + id).src = 'https://song.gushiwen.cn/siteimg/shou-cangok.png';
+                            document.getElementById('likeImg' + id).alt = '已收藏'
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        //判断收藏名句
+        function selectLikeMingju(id) {
+            document.getElementById('likeImg' + id).name = parseInt(document.getElementById('likeImg' + id).name) + 1;
+            if (document.getElementById('likeImg' + id).name == '1') {
+                var idsShigeLaiyo = getCookie('idsMingju2017');
+                if (idsShigeLaiyo != null && idsShigeLaiyo != '') {
+                    var ids = idsShigeLaiyo.split(',');
+                    for (var i = 0; i < ids.length; i++) {
+                        if (ids[i] == id) {
+                            document.getElementById('likeImg' + id).src = 'https://song.gushiwen.cn/siteimg/shou-cangok.png';
+                            document.getElementById('likeImg' + id).alt = '已收藏';
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+            </script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9007fab6814e892d3020a64454da5a55";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+</script>
+
+<link rel="stylesheet" type="text/css" href="./Oldsons_files/graybox.css"><link rel="stylesheet" type="text/css" href="./Oldsons_files/blackdownbar.css"></head>
+<body onclick="closeshowBos()">
+<div class="main1">
+    <div class="cont">
+        <div class="left">
+            <h1><a href="https://www.gushiwen.cn/">古诗文网</a></h1>
+        </div>
+        <div class="right">
+            <div class="son1">
+                <a style="margin-left:1px;background-color:#757863;border-bottom:3px solid #F0EFE2;line-height:43px; height:43px;" href="https://www.gushiwen.cn/">推荐</a>
+                <a href="https://so.gushiwen.cn/shiwens/">诗文</a>
+                <a href="https://so.gushiwen.cn/mingjus/">名句</a>
+                <a href="https://so.gushiwen.cn/authors/">作者</a>
+                <a href="https://so.gushiwen.cn/guwen/">古籍</a>
+                <a href="https://so.gushiwen.cn/user/collect.aspx" rel="nofollow">我的</a>
+                <a style="width:65px;" href="https://so.gushiwen.cn/app/DefaultGwd.aspx" target="_blank">手机版</a>
+            </div>
+            <div class="son2">
+                <div class="search">
+                <form action="https://so.gushiwen.cn/search.aspx" onsubmit="return selectSearch()" contenttype="text/html; charset=utf-8">
+                    <input onkeydown="noajaxkeyUp()" oninput="goshowBos()" id="txtKey" name="value" type="text" value="" maxlength="40" autocomplete="off" style="height:25px; line-height:25px; float:left; padding-left:5px; width:260px; font-size:14px; clear:left; border:0px;">
+                    <input style=" display:none;" id="valuej" name="valuej" value="">
+                    <input type="submit" style="float:right; width:24px; height:24px; clear:right; margin-top:2px; margin-right:3px; background-image:url(https://song.gushiwen.cn/siteimg/docSearch.png); background-repeat:no-repeat; background-size:24px 24px; border:0px;cursor:pointer;" value="">
+                    <input id="b" style="display:none;" type="text">
+                </form>
+                </div>
+                <div id="box" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main3">
+    <div class="left">
+         
+    <div style=" width:1px; height:1px; overflow:hidden;">
+        <textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtare1535">桐花半亩，静锁一庭愁雨。https://m.gushiwen.cn/mingju/juv_a0802df51c4b.aspx</textarea>
+    </div>
+    <div class="sons">
+        <div class="contImg">
+            <img src="./Oldsons_files/B38A17D34E9DADE164D259E004F53C11.jpg" alt="桐花半亩，静锁一庭愁雨。" width="100%">
+            <div class="info">仇英 柳园图局部</div>
+            <div class="jucount"><a target="_blank" href="https://so.gushiwen.cn/mingju/juv_a0802df51c4b.aspx">桐花半亩，静锁一庭愁雨。</a></div>
+            
+                <div class="sourceimg">
+                    <a target="_blank" href="https://so.gushiwen.cn/shiwenv_aa8e4c4e7017.aspx">周邦彦《琐窗寒·寒食》</a>
+                </div>
+              
+        </div>
+        <div class="tool">
+            <div class="shoucang"><img id="likeImg1535" name="1" onload="selectLikeMingju(1535)" onclick="changeLikeMingju(1535,&#39;60C7DA09F6ABB18A&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)" src="./Oldsons_files/shou-cang.png" alt="收藏" width="19" height="19"></div>
+            <div class="toolpinglun"><a href="https://so.gushiwen.cn/app/DefaultGwd.aspx"><img src="./Oldsons_files/down-load.png" alt="下载" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a href="javascript:copy(1535)"><img src="./Oldsons_files/co-py.png" alt="复制" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a target="_blank" href="https://so.gushiwen.cn/mingju/juv_a0802df51c4b.aspx"><img src="./Oldsons_files/tool-more.png" alt="详情" width="19" height="19"></a></div>
+            <div class="jiucuo"><a href="https://so.gushiwen.cn/jiucuo.aspx?from=http://www.gushiwen.cn/default.aspx&amp;u=%e5%90%8d%e5%8f%a5a0802df51c4b%e3%80%8a%e6%a1%90%e8%8a%b1%e5%8d%8a%e4%ba%a9%ef%bc%8c%e9%9d%99%e9%94%81%e4%b8%80%e5%ba%ad%e6%84%81%e9%9b%a8%e3%80%82%e3%80%8b">完善</a></div>
+        </div>
+    </div>
+         
+          <div style=" width:1px; height:1px; overflow:hidden;">
+<textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtare71942">曲阑深处重相见，匀泪偎人颤。凄凉别后两应同，最是不胜清怨月明中。半生已分孤眠过，山枕檀痕涴。忆来何事最销魂，第一折枝花样画罗裙。——清代·纳兰性德《虞美人·曲阑深处重相见》https://so.gushiwen.cn/shiwenv_f27a0db2985b.aspx</textarea>
+</div>
+          <div class="sons">
+              <div class="cont">
+              <div class="yizhu">
+               <img src="./Oldsons_files/bei-pic.png" width="25" height="25" alt="背诵" onclick="OnBeisong(&#39;f27a0db2985b&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;,&#39;38788FAB93FD60DB85A22E772FC8646E&#39;)" id="btnBeisongf27a0db2985b">
+                    <img style="display: block;" src="./Oldsons_files/shang-pic.png" width="25" height="25" alt="赏析" onclick="OnShangxi(&#39;f27a0db2985b&#39;,&#39;38788FAB93FD60DB85A22E772FC8646E&#39;)" id="btnShangxif27a0db2985b">
+                    <img style="display: block;" src="./Oldsons_files/zhu-pic.png" width="25" height="25" alt="注释" onclick="OnZhushi(&#39;f27a0db2985b&#39;,&#39;38788FAB93FD60DB85A22E772FC8646E&#39;)" id="btnZhushif27a0db2985b">
+                    <img style="display: block;" src="./Oldsons_files/yi-pic.png" width="25" height="25" alt="译文" onclick="OnYiwen(&#39;f27a0db2985b&#39;,&#39;38788FAB93FD60DB85A22E772FC8646E&#39;)" id="btnYiwenf27a0db2985b">
+                 
+                    <script type="text/javascript">
+                        document.getElementById("btnShangxif27a0db2985b").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnZhushif27a0db2985b").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnYiwenf27a0db2985b").style.display = "block";
+                    </script>
+                
+               </div>
+              <p><a style="font-size:18px; line-height:22px; height:22px;" href="https://so.gushiwen.cn/shiwenv_f27a0db2985b.aspx" target="_blank"><b>虞美人·曲阑深处重相见</b></a></p>
+              <p class="source"><a href="https://so.gushiwen.cn/authorv.aspx?name=%e7%ba%b3%e5%85%b0%e6%80%a7%e5%be%b7" target="_blank">纳兰性德</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%e6%b8%85%e4%bb%a3" target="_blank">〔清代〕</a></p>
+                <div class="contson" id="contsonf27a0db2985b">
+                    曲阑深处重相见，匀泪偎人颤。凄凉别后两应同，最是不胜清怨月明中。<br>半生已分孤眠过，山枕檀痕涴。忆来何事最销魂，第一折枝花样画罗裙。 
+                </div>
+              </div>
+              <div class="tool">
+            <div class="shoucang"><img id="likeImg71942" name="1" onload="selectLike(71942)" onclick="changeLike(71942,&#39;24B68F5B460E6B38&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)" src="./Oldsons_files/shou-cang.png" alt="收藏" width="19" height="19"></div>
+            <div class="toolpinglun"><a href="https://so.gushiwen.cn/app/DefaultGwd.aspx"><img src="./Oldsons_files/down-load.png" alt="下载" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a href="javascript:copy(71942)"><img src="./Oldsons_files/co-py.png" alt="复制" width="19" height="19"></a></div>
+             
+              <div class="toolpinglun"><a href="javascript:Play(&#39;f27a0db2985b&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)"><img id="speakerimgf27a0db2985b" src="./Oldsons_files/speak-er.png" alt="" width="19" height="19"></a></div>
+              
+              <div class="toolpinglun"><a href="https://so.gushiwen.cn/shiwenv_f27a0db2985b.aspx" target="_blank"><img src="./Oldsons_files/tool-more.png" alt="详情" width="19" height="19"></a></div>
+                <div class="jiucuo"><a href="https://so.gushiwen.cn/jiucuo.aspx?u=%e8%af%97%e6%96%87f27a0db2985b%e3%80%8a%e8%99%9e%e7%be%8e%e4%ba%ba%c2%b7%e6%9b%b2%e9%98%91%e6%b7%b1%e5%a4%84%e9%87%8d%e7%9b%b8%e8%a7%81%e3%80%8b" target="_blank">完善</a></div>
+            </div>
+            <div id="toolPlayf27a0db2985b" style=" display:none;clear:both;"></div>
+               
+                  <div class="tag">
+                      
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e7%a6%bb%e5%88%ab">离别</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e7%9b%b8%e6%80%9d">相思</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e6%83%85%e5%88%ab%e7%a6%bb">情别离</a>
+                        
+                  </div>
+                
+        </div>
+           
+          <div style=" width:1px; height:1px; overflow:hidden;">
+<textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtare71107">楚人有涉江者，其剑自舟中坠于水。遽契其舟，曰：“是吾剑之所从坠。”舟止，从其所契者入水求之。舟已行矣，而剑不行，求剑若此，不亦惑乎！——先秦·佚名《刻舟求剑》https://so.gushiwen.cn/shiwenv_6c25baf854f7.aspx</textarea>
+</div>
+          <div class="sons">
+              <div class="cont">
+              <div class="yizhu">
+               <img src="./Oldsons_files/bei-pic.png" width="25" height="25" alt="背诵" onclick="OnBeisong(&#39;6c25baf854f7&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;,&#39;EC1FC0BD5FAE06FEDE77BA7F15C1EF16&#39;)" id="btnBeisong6c25baf854f7">
+                    <img style="display: block;" src="./Oldsons_files/shang-pic.png" width="25" height="25" alt="赏析" onclick="OnShangxi(&#39;6c25baf854f7&#39;,&#39;EC1FC0BD5FAE06FEDE77BA7F15C1EF16&#39;)" id="btnShangxi6c25baf854f7">
+                    <img style="display: block;" src="./Oldsons_files/zhu-pic.png" width="25" height="25" alt="注释" onclick="OnZhushi(&#39;6c25baf854f7&#39;,&#39;EC1FC0BD5FAE06FEDE77BA7F15C1EF16&#39;)" id="btnZhushi6c25baf854f7">
+                    <img style="display: block;" src="./Oldsons_files/yi-pic.png" width="25" height="25" alt="译文" onclick="OnYiwen(&#39;6c25baf854f7&#39;,&#39;EC1FC0BD5FAE06FEDE77BA7F15C1EF16&#39;)" id="btnYiwen6c25baf854f7">
+                 
+                    <script type="text/javascript">
+                        document.getElementById("btnShangxi6c25baf854f7").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnZhushi6c25baf854f7").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnYiwen6c25baf854f7").style.display = "block";
+                    </script>
+                
+               </div>
+              <p><a style="font-size:18px; line-height:22px; height:22px;" href="https://so.gushiwen.cn/shiwenv_6c25baf854f7.aspx" target="_blank"><b>刻舟求剑</b></a></p>
+              <p class="source"><a href="https://so.gushiwen.cn/authorv.aspx?name=%e4%bd%9a%e5%90%8d" target="_blank">佚名</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%e5%85%88%e7%a7%a6" target="_blank">〔先秦〕</a></p>
+                <div class="contson" id="contson6c25baf854f7">
+                    楚人有涉江者，其剑自舟中坠于水。遽契其舟，曰：“是吾剑之所从坠。”舟止，从其所契者入水求之。舟已行矣，而剑不行，求剑若此，不亦惑乎！ 
+                </div>
+              </div>
+              <div class="tool">
+            <div class="shoucang"><img id="likeImg71107" name="1" onload="selectLike(71107)" onclick="changeLike(71107,&#39;A178D126BA996AEC&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)" src="./Oldsons_files/shou-cang.png" alt="收藏" width="19" height="19"></div>
+            <div class="toolpinglun"><a href="https://so.gushiwen.cn/app/DefaultGwd.aspx"><img src="./Oldsons_files/down-load.png" alt="下载" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a href="javascript:copy(71107)"><img src="./Oldsons_files/co-py.png" alt="复制" width="19" height="19"></a></div>
+            
+              <div class="toolpinglun"><a href="https://so.gushiwen.cn/shiwenv_6c25baf854f7.aspx" target="_blank"><img src="./Oldsons_files/tool-more.png" alt="详情" width="19" height="19"></a></div>
+                <div class="jiucuo"><a href="https://so.gushiwen.cn/jiucuo.aspx?u=%e8%af%97%e6%96%876c25baf854f7%e3%80%8a%e5%88%bb%e8%88%9f%e6%b1%82%e5%89%91%e3%80%8b" target="_blank">完善</a></div>
+            </div>
+            <div id="toolPlay6c25baf854f7" style=" display:none;clear:both;"></div>
+               
+                  <div class="tag">
+                      
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e5%b0%8f%e5%ad%a6%e6%96%87%e8%a8%80%e6%96%87">小学文言文</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e5%af%93%e8%a8%80">寓言</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e6%95%85%e4%ba%8b">故事</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e5%93%b2%e7%90%86">哲理</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e8%af%b4%e7%90%86">说理</a>
+                        
+                  </div>
+                
+        </div>
+           
+        <div class="sons">
+            <div class="cont" style=" margin-top:0px; margin-right:0px; margin-left:0px;">
+                <div class="changshi">常识</div>
+                <table>
+                    <tbody><tr>
+                        
+                              <td style=" font-size:12px; width:40px; color:#65645F;">kōng</td>
+                          
+                              <td style=" font-size:12px; width:40px; color:#65645F;">cuì</td>
+                          
+                    </tr>
+                    <tr>
+                        
+                              <td style=" font-size:18px; font-weight:bold;">空</td>
+                          
+                              <td style=" font-size:18px; font-weight:bold;">翠</td>
+                          
+                    </tr>
+                </tbody></table>
+                <div class="changshicont">
+                    1.指绿色的草木。2.指绿叶。3.指青色的潮湿的雾气。4.指碧空，苍天。5.指清澈的泉水。
+                </div>
+            </div>
+        </div>
+       
+          <div style=" width:1px; height:1px; overflow:hidden;">
+<textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtare1013595">咨五才之并用，实水德之灵长。惟岷山之导江，初发源乎滥觞。聿经始于洛沬，拢万川乎巴梁。冲巫峡以迅激，跻江津而起涨。极泓量而海运，状滔天以淼茫。总括汉泗，兼包淮湘。并吞沅澧，汲引沮漳。源二分于崌崃，流九派乎浔阳。鼓洪涛于赤岸，沦余波乎柴桑。纲络群流，商搉涓浍。表神委于江都，混流宗而东会。注五湖以漫漭，灌三江而漰沛。滈汗六州之域，经营炎景之外。所以作限于华裔，壮天地之崄介。呼吸万里，吐纳灵潮。自然往复，或夕或朝。激逸势以前驱，乃鼓怒而作涛。峨嵋为泉阳之揭，玉垒作东别之标。衡霍磊落以连镇，巫庐嵬崛而比峤。协灵通气，濆薄相陶。流风蒸雷，腾虹扬霄。出信阳而长迈，淙大壑与沃焦。若乃巴东之峡，夏后疏凿。绝岸万丈，壁立赮驳。虎牙嵥竖以屹崒，荆门阙竦而磐礴。圆渊九回以悬腾，湓流雷呴而电激。骇浪暴洒，惊波飞薄。迅澓增浇，涌湍叠跃。砯岩鼓作，漰湱泶灂。㵗㶔渹𣸎，溃濩泧漷。潏湟淴泱，㶖㴸㶒瀹。漩澴荥瀯，渨㵽濆瀑。溭淢浕涢，龙鳞结络。碧沙瀢沱而往来，巨石硉矹以前却。潜演之所汩淈，奔溜之所磢错。厓隒为之泐嵃，埼岭为之岩崿。幽涧积岨，礐硞菪礭。若乃曾潭之府，灵湖之渊。澄澹汪洸，瀇滉囦泫。泓汯浻澋，涒邻㘤潾。混澣灦涣，流映扬焆。溟漭渺沔，汗汗沺沺。察之无象，寻之无边。气滃渤以雾杳，时郁律其如烟。类胚浑之未凝，象太极之构天。长波浃渫，峻湍崔嵬。盘涡谷转，凌涛山颓。阳侯砐硪以岸起，洪澜涴演而云回。峾沦溛瀤，乍浥乍堆。豃如地裂，豁若天开。触曲厓以萦绕，骇崩浪而相礧。鼓㕉窟以漰浡，乃湓涌而驾隈。鱼则江豚海狶，叔鲔王鳣，叔鲔王鳣，䱻鰊鰧鲉，鲮鳐䲝鲢。或鹿觡象鼻，或虎状龙颜。鳞甲璀错，焕烂锦斑。扬鳍掉尾，喷浪飞唌；排流呼哈，随波游延；或爆采以晃渊，或吓鳃乎岩间。介鲸乘涛以出入，鯼鮆顺时而往还。尔其水物怪错，则有潜鹄鱼牛，虎蛟钩蛇。蜦䗚鲎蝞，鲼𪓛𪓬𪓹；王珧海月，土肉石华。三蝬蜉江，鹦螺蜁蜗；璅蛣腹蟹，水母目虾。紫蚢如渠，洪蚶专车。琼蚌晞曜以莹珠，石蜐应节而扬葩；蜛蝫森衰以垂翘，玄蛎磈螺而碨䃁；或泛潋于潮波，或混沦乎泥沙。若乃龙鲤一角，奇鸧九头。有鳖三足，有龟六眸。赪蟞胏跃而吐玑，文魮磬鸣以孕璆。䖺䗤拂翼而掣耀，神蜧蝹蜦以沉游。䮀马腾波以嘘蹀，水兕雷咆乎阳侯。渊客筑室于岩底，鲛人构馆于悬流。雹布余米，星离沙镜；青纶竞纠，缛组争映。紫菜荧晔以丛被，绿苔鬖髿乎研上，石帆蒙笼以盖屿，萍实时出而漂沫。其下则金矿丹砾，云精爥银；珕珋璇瑰，水碧潜琘。鸣石列于阳渚，浮磬肆乎阴滨。或颎彩轻涟，或焆曜崖邻。林无不溽，岸无不津。其羽族也，则有晨鹄天鸡，鴢鷔鸥䲦。阳鸟爰翔，于以玄月。千类万声，自相喧聒。濯翮疏风，鼓翅獝䎉。挥弄洒珠，拊拂瀑沫。集若霞布，散如云豁。产毻积羽，往来勃碣。橉杞稹薄于浔涘，栛梿森岭而罗峰。桃枝筼筜，实繁有丛。葭蒲云蔓，䙬以兰红。扬皓毦，擢紫茸，荫潭隩，被长江。繁蔚芳蓠，隐蔼水松。涯灌芊萰，潜荟葱茏。鲮鯥䟸跼于垠隒，獱獭睒瞲乎厱空；迅蜼临虚以骋巧，孤玃登危而雍容。夔㸸踛㸸于夕阳，鸳雏弄翮乎山东。因岐成渚，触涧开渠。漱壑生浦，区别作湖。磴之以瀿瀷，渫之以尾闾。标之以翠蘙，泛之以游菰。播匪艺之芒种，挺自然之嘉蔬。鳞被菱荷，攒布水蓏。翘茎瀵蕊，濯颖散裹。随风猗萎，与波潭沲。流光潜映，景炎霞火。其旁则有云梦雷池，彭蠡青草，具区洮滆，朱浐丹漅。极望数百，沆漾皛溔。爰有包山洞庭，巴陵地道。潜逵旁通，幽岫窈窕。金精玉英瑱其里，瑶珠怪石琗其表。骊虬樛其址，梢云冠其㟽。海童之所巡游，琴高之所灵矫；冰夷倚浪以傲睨，江妃含嚬而矊眇。抚凌波而凫跃，吸翠霞而夭矫。若乃宇宙澄寂，八风不翔。舟子于是搦棹，涉人于是㩘榜。漂飞云，运艅艎；舳舻相属，万里连樯。溯洄沿流，或渔或商；赴交益，投幽浪，竭南极，穷东荒。尔乃矖雰祲于清旭，觇五两之动静。长风颹以增扇，广莫䬅而气整。徐而不䬐，疾而不猛。鼓帆迅越，䞟涨截泂。凌波纵柂，电住杳溟。䨴如晨霞弧征，眇若云翼绝岭。倏忽数百，千里俄顷。飞廉无以睎其踪，渠黄不能企其景。于是芦人渔子，摈落江山，衣则羽褐，食惟蔬鲜。栫淀为涔，夹潈罗筌。筩洒连锋，罾䍣比船。或挥轮于悬踦，或中濑而横旋。忽忘夕而宵归，咏采菱以叩舷。傲自足于一呕，寻风波以穷年。尔乃域之以盘岩，豁之以洞壑，疏之以沲汜，鼓之以潮汐。川流之所归凑，云雾之所蒸液。珍怪之所化产，傀奇之所窟宅。纳隐沦之列真，挺异人乎精魄。播灵润于千里，越岱宗之触石。及其谲变儵怳，符祥非一。动应无方，感事而出。经纪天地，错综人术，妙不可尽之于言，事不可穷之于笔。若乃岷精垂曜于东井，阳侯遁形乎大波。奇相得道而宅神，乃协灵爽于湘娥。骇黄龙之负舟，识伯禹之仰嗟。壮荆飞之擒蛟，终成气乎太阿。悍要离之图庆，在中流而推戈。悲灵均之任石，叹渔父之棹歌。想周穆之济师，驱八骏于鼋鼍。感交甫之丧佩，愍神使之婴罗。焕大块之流形，混万尽于一科。保不亏而永固，禀元气于灵和。考川渎而妙观，实莫着于江河。——魏晋·郭璞《江赋》https://so.gushiwen.cn/shiwenv_f9624b08e4d3.aspx</textarea>
+</div>
+          <div class="sons">
+              <div class="cont">
+              <div class="yizhu">
+               <img src="./Oldsons_files/bei-pic.png" width="25" height="25" alt="背诵" onclick="OnBeisong(&#39;f9624b08e4d3&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;,&#39;48D4C99C0301D8D8B061D0D34434E48B&#39;)" id="btnBeisongf9624b08e4d3">
+                    <img style="display: block;" src="./Oldsons_files/shang-pic.png" width="25" height="25" alt="赏析" onclick="OnShangxi(&#39;f9624b08e4d3&#39;,&#39;48D4C99C0301D8D8B061D0D34434E48B&#39;)" id="btnShangxif9624b08e4d3">
+                    <img style="display: block;" src="./Oldsons_files/zhu-pic.png" width="25" height="25" alt="注释" onclick="OnZhushi(&#39;f9624b08e4d3&#39;,&#39;48D4C99C0301D8D8B061D0D34434E48B&#39;)" id="btnZhushif9624b08e4d3">
+                    <img style="display: block;" src="./Oldsons_files/yi-pic.png" width="25" height="25" alt="译文" onclick="OnYiwen(&#39;f9624b08e4d3&#39;,&#39;48D4C99C0301D8D8B061D0D34434E48B&#39;)" id="btnYiwenf9624b08e4d3">
+                 
+                    <script type="text/javascript">
+                        document.getElementById("btnShangxif9624b08e4d3").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnZhushif9624b08e4d3").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnYiwenf9624b08e4d3").style.display = "block";
+                    </script>
+                
+               </div>
+              <p><a style="font-size:18px; line-height:22px; height:22px;" href="https://so.gushiwen.cn/shiwenv_f9624b08e4d3.aspx" target="_blank"><b>江赋</b></a></p>
+              <p class="source"><a href="https://so.gushiwen.cn/authorv.aspx?name=%e9%83%ad%e7%92%9e" target="_blank">郭璞</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%e9%ad%8f%e6%99%8b" target="_blank">〔魏晋〕</a></p>
+                <div class="contson" id="contsonf9624b08e4d3">
+                    <p>　　咨五才之并用，实水德之灵长。惟岷山之导江，初发源乎滥觞。聿经始于洛沬，拢万川乎巴梁。冲巫峡以迅激，跻江津而起涨。极泓量而海运，状滔天以淼茫。总括汉泗，兼包淮湘。并吞沅澧，汲引沮漳。源二分于崌崃，流九派乎浔阳。鼓洪涛于赤岸，沦余波乎柴桑。纲络群流，商搉涓浍。表神委于江都，混流宗而东会。注五湖以漫漭，灌三江而漰沛。滈汗六州之域，经营炎景之外。所以作限于华裔，壮天地之崄介。呼吸万里，吐纳灵潮。自然往复，或夕或朝。激逸势以前驱，乃鼓怒而作涛。</p>
+<p>　　峨嵋为泉阳之揭，玉垒作东别之标。衡霍磊落以连镇，巫庐嵬崛而比峤。协灵通气，濆薄相陶。流风蒸雷，腾虹扬霄。出信阳而长迈，淙大壑与沃焦。若乃巴东之峡，夏后疏凿。绝岸万丈，壁立赮驳。虎牙嵥竖以屹崒，荆门阙竦而磐礴。圆渊九回以悬腾，湓流雷呴而电激。骇浪暴洒，惊波飞薄。迅澓增浇，涌湍叠跃。砯岩鼓作，漰湱泶灂。㵗㶔渹𣸎，溃濩泧漷。潏湟淴泱，㶖㴸㶒瀹。漩澴荥瀯，渨㵽濆瀑。溭淢浕涢，龙鳞结络。碧沙瀢沱而往来，巨石硉矹以前却。潜演之所汩淈，奔溜之所磢错。厓隒为之泐嵃，埼岭为之岩崿。幽涧积岨，礐硞菪礭。</p>
+<p>　　若乃曾潭之府，灵湖之渊。澄澹汪洸，瀇滉囦泫。泓汯浻澋，涒邻㘤潾。混澣灦涣，流映扬焆。溟漭渺沔，汗汗沺沺。察之无象，寻之无边。气滃渤以雾杳，时郁律其如烟。类胚浑之未凝，象太极之构天。长波浃渫，峻湍崔嵬。盘涡谷转，凌涛山颓。阳侯砐硪以岸起，洪澜涴演而云回。峾沦溛瀤，乍浥乍堆。豃如地裂，豁若天开。触曲厓以萦绕，骇崩浪而相礧。鼓㕉窟以漰浡，乃湓涌而驾隈。</p>
+<p>　　鱼则江豚海狶，叔鲔王鳣，叔鲔王鳣，䱻鰊鰧鲉，鲮鳐䲝鲢。或鹿觡象鼻，或虎状龙颜。鳞甲璀错，焕烂锦斑。扬鳍掉尾，喷浪飞唌；排流呼哈，随波游延；或爆采以晃渊，或吓鳃乎岩间。介鲸乘涛以出入，鯼鮆顺时而往还。尔其水物怪错，则有潜鹄鱼牛，虎蛟钩蛇。蜦䗚鲎蝞，鲼𪓛𪓬𪓹；王珧海月，土肉石华。三蝬蜉江，鹦螺蜁蜗；璅蛣腹蟹，水母目虾。紫蚢如渠，洪蚶专车。琼蚌晞曜以莹珠，石蜐应节而扬葩；蜛蝫森衰以垂翘，玄蛎磈螺而碨䃁；或泛潋于潮波，或混沦乎泥沙。若乃龙鲤一角，奇鸧九头。有鳖三足，有龟六眸。赪蟞胏跃而吐玑，文魮磬鸣以孕璆。䖺䗤拂翼而掣耀，神蜧蝹蜦以沉游。䮀马腾波以嘘蹀，水兕雷咆乎阳侯。</p>
+<p>　　渊客筑室于岩底，鲛人构馆于悬流。雹布余米，星离沙镜；青纶竞纠，缛组争映。紫菜荧晔以丛被，绿苔鬖髿乎研上，石帆蒙笼以盖屿，萍实时出而漂沫。其下则金矿丹砾，云精爥银；珕珋璇瑰，水碧潜琘。鸣石列于阳渚，浮磬肆乎阴滨。或颎彩轻涟，或焆曜崖邻。林无不溽，岸无不津。</p>
+<p>　　其羽族也，则有晨鹄天鸡，鴢鷔鸥䲦。阳鸟爰翔，于以玄月。千类万声，自相喧聒。濯翮疏风，鼓翅獝䎉。挥弄洒珠，拊拂瀑沫。集若霞布，散如云豁。产毻积羽，往来勃碣。橉杞稹薄于浔涘，栛梿森岭而罗峰。桃枝筼筜，实繁有丛。葭蒲云蔓，䙬以兰红。扬皓毦，擢紫茸，荫潭隩，被长江。繁蔚芳蓠，隐蔼水松。涯灌芊萰，潜荟葱茏。鲮鯥䟸跼于垠隒，獱獭睒瞲乎厱空；迅蜼临虚以骋巧，孤玃登危而雍容。夔㸸踛㸸于夕阳，鸳雏弄翮乎山东。因岐成渚，触涧开渠。漱壑生浦，区别作湖。磴之以瀿瀷，渫之以尾闾。标之以翠蘙，泛之以游菰。播匪艺之芒种，挺自然之嘉蔬。鳞被菱荷，攒布水蓏。翘茎瀵蕊，濯颖散裹。随风猗萎，与波潭沲。流光潜映，景炎霞火。</p>
+<p>　　其旁则有云梦雷池，彭蠡青草，具区洮滆，朱浐丹漅。极望数百，沆漾皛溔。爰有包山洞庭，巴陵地道。潜逵旁通，幽岫窈窕。金精玉英瑱其里，瑶珠怪石琗其表。骊虬樛其址，梢云冠其㟽。海童之所巡游，琴高之所灵矫；冰夷倚浪以傲睨，江妃含嚬而矊眇。抚凌波而凫跃，吸翠霞而夭矫。若乃宇宙澄寂，八风不翔。舟子于是搦棹，涉人于是㩘榜。漂飞云，运艅艎；舳舻相属，万里连樯。溯洄沿流，或渔或商；赴交益，投幽浪，竭南极，穷东荒。尔乃矖雰祲于清旭，觇五两之动静。长风颹以增扇，广莫䬅而气整。徐而不䬐，疾而不猛。鼓帆迅越，䞟涨截泂。凌波纵柂，电住杳溟。䨴如晨霞弧征，眇若云翼绝岭。倏忽数百，千里俄顷。飞廉无以睎其踪，渠黄不能企其景。于是芦人渔子，摈落江山，衣则羽褐，食惟蔬鲜。栫淀为涔，夹潈罗筌。筩洒连锋，罾䍣比船。或挥轮于悬踦，或中濑而横旋。忽忘夕而宵归，咏采菱以叩舷。傲自足于一呕，寻风波以穷年。</p>
+<p>　　尔乃域之以盘岩，豁之以洞壑，疏之以沲汜，鼓之以潮汐。川流之所归凑，云雾之所蒸液。珍怪之所化产，傀奇之所窟宅。纳隐沦之列真，挺异人乎精魄。播灵润于千里，越岱宗之触石。及其谲变儵怳，符祥非一。动应无方，感事而出。经纪天地，错综人术，妙不可尽之于言，事不可穷之于笔。若乃岷精垂曜于东井，阳侯遁形乎大波。奇相得道而宅神，乃协灵爽于湘娥。骇黄龙之负舟，识伯禹之仰嗟。壮荆飞之擒蛟，终成气乎太阿。悍要离之图庆，在中流而推戈。悲灵均之任石，叹渔父之棹歌。想周穆之济师，驱八骏于鼋鼍。感交甫之丧佩，愍神使之婴罗。焕大块之流形，混万尽于一科。保不亏而永固，禀元气于灵和。考川渎而妙观，实莫着于江河。</p>
+                </div>
+              </div>
+              <div class="tool">
+            <div class="shoucang"><img id="likeImg1013595" name="1" onload="selectLike(1013595)" onclick="changeLike(1013595,&#39;D8CA7C6EE9739DA2726FE59FF72993C8&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)" src="./Oldsons_files/shou-cang.png" alt="收藏" width="19" height="19"></div>
+            <div class="toolpinglun"><a href="https://so.gushiwen.cn/app/DefaultGwd.aspx"><img src="./Oldsons_files/down-load.png" alt="下载" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a href="javascript:copy(1013595)"><img src="./Oldsons_files/co-py.png" alt="复制" width="19" height="19"></a></div>
+            
+              <div class="toolpinglun"><a href="https://so.gushiwen.cn/shiwenv_f9624b08e4d3.aspx" target="_blank"><img src="./Oldsons_files/tool-more.png" alt="详情" width="19" height="19"></a></div>
+                <div class="jiucuo"><a href="https://so.gushiwen.cn/jiucuo.aspx?u=%e8%af%97%e6%96%87f9624b08e4d3%e3%80%8a%e6%b1%9f%e8%b5%8b%e3%80%8b" target="_blank">完善</a></div>
+            </div>
+            <div id="toolPlayf9624b08e4d3" style=" display:none;clear:both;"></div>
+               
+                  <div class="tag">
+                      
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e5%b1%b1%e6%b0%b4">山水</a>
+                        
+                  </div>
+                
+        </div>
+           
+          <div style=" width:1px; height:1px; overflow:hidden;">
+<textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtare70783">水软橹声柔，草绿芳洲，碧桃几树隐红楼。者是春山魂一片，招入孤舟。乡梦不曾休，惹甚闲愁？忠州过了又涪州。掷与巴江流到海，切莫回头。——清代·左辅《浪淘沙·曹溪驿折桃花一枝数日零落裹花片投之涪江歌此送之》https://so.gushiwen.cn/shiwenv_3eca05d74a69.aspx</textarea>
+</div>
+          <div class="sons">
+              <div class="cont">
+              <div class="yizhu">
+               <img src="./Oldsons_files/bei-pic.png" width="25" height="25" alt="背诵" onclick="OnBeisong(&#39;3eca05d74a69&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;,&#39;B197489406BEE43FDF12431F7D5EBE57&#39;)" id="btnBeisong3eca05d74a69">
+                    <img style="display: block;" src="./Oldsons_files/shang-pic.png" width="25" height="25" alt="赏析" onclick="OnShangxi(&#39;3eca05d74a69&#39;,&#39;B197489406BEE43FDF12431F7D5EBE57&#39;)" id="btnShangxi3eca05d74a69">
+                    <img style="display: block;" src="./Oldsons_files/zhu-pic.png" width="25" height="25" alt="注释" onclick="OnZhushi(&#39;3eca05d74a69&#39;,&#39;B197489406BEE43FDF12431F7D5EBE57&#39;)" id="btnZhushi3eca05d74a69">
+                    <img style=" display:none;" src="./Oldsons_files/yi-pic.png" width="25" height="25" alt="译文" onclick="OnYiwen(&#39;3eca05d74a69&#39;,&#39;B197489406BEE43FDF12431F7D5EBE57&#39;)" id="btnYiwen3eca05d74a69">
+                 
+                    <script type="text/javascript">
+                        document.getElementById("btnShangxi3eca05d74a69").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnZhushi3eca05d74a69").style.display = "block";
+                    </script>
+                
+               </div>
+              <p><a style="font-size:18px; line-height:22px; height:22px;" href="https://so.gushiwen.cn/shiwenv_3eca05d74a69.aspx" target="_blank"><b>浪淘沙·曹溪驿折桃花一枝数日零落裹花片投之涪江歌此送之</b></a></p>
+              <p class="source"><a href="https://so.gushiwen.cn/authorv.aspx?name=%e5%b7%a6%e8%be%85" target="_blank">左辅</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%e6%b8%85%e4%bb%a3" target="_blank">〔清代〕</a></p>
+                <div class="contson" id="contson3eca05d74a69">
+                    水软橹声柔，草绿芳洲，碧桃几树隐红楼。者是春山魂一片，招入孤舟。<br>乡梦不曾休，惹甚闲愁？忠州过了又涪州。掷与巴江流到海，切莫回头。 
+                </div>
+              </div>
+              <div class="tool">
+            <div class="shoucang"><img id="likeImg70783" name="1" onload="selectLike(70783)" onclick="changeLike(70783,&#39;B352B1C2073699DE&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)" src="./Oldsons_files/shou-cang.png" alt="收藏" width="19" height="19"></div>
+            <div class="toolpinglun"><a href="https://so.gushiwen.cn/app/DefaultGwd.aspx"><img src="./Oldsons_files/down-load.png" alt="下载" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a href="javascript:copy(70783)"><img src="./Oldsons_files/co-py.png" alt="复制" width="19" height="19"></a></div>
+            
+              <div class="toolpinglun"><a href="https://so.gushiwen.cn/shiwenv_3eca05d74a69.aspx" target="_blank"><img src="./Oldsons_files/tool-more.png" alt="详情" width="19" height="19"></a></div>
+                <div class="jiucuo"><a href="https://so.gushiwen.cn/jiucuo.aspx?u=%e8%af%97%e6%96%873eca05d74a69%e3%80%8a%e6%b5%aa%e6%b7%98%e6%b2%99%c2%b7%e6%9b%b9%e6%ba%aa%e9%a9%bf%e6%8a%98%e6%a1%83%e8%8a%b1%e4%b8%80%e6%9e%9d%e6%95%b0%e6%97%a5%e9%9b%b6%e8%90%bd%e8%a3%b9%e8%8a%b1%e7%89%87%e6%8a%95%e4%b9%8b%e6%b6%aa%e6%b1%9f%e6%ad%8c%e6%ad%a4%e9%80%81%e4%b9%8b%e3%80%8b" target="_blank">完善</a></div>
+            </div>
+            <div id="toolPlay3eca05d74a69" style=" display:none;clear:both;"></div>
+               
+                  <div class="tag">
+                      
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e5%a9%89%e7%ba%a6">婉约</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e6%a1%83%e8%8a%b1">桃花</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e6%80%9d%e4%b9%a1">思乡</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e4%b9%a1%e6%83%85">乡情</a>
+                        
+                  </div>
+                
+        </div>
+           
+    <div style=" width:1px; height:1px; overflow:hidden;">
+        <textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtare5363">平冈细草鸣黄犊，斜日寒林点暮鸦。https://m.gushiwen.cn/mingju/juv_361a6df7db04.aspx</textarea>
+    </div>
+    <div class="sons">
+        <div class="contImg">
+            <img src="./Oldsons_files/B38A17D34E9DADE14BF1211AB341E404.jpg" alt="平冈细草鸣黄犊，斜日寒林点暮鸦。" width="100%">
+            <div class="info">王蒙 南村草堂图局部</div>
+            <div class="jucount"><a target="_blank" href="https://so.gushiwen.cn/mingju/juv_361a6df7db04.aspx">平冈细草鸣黄犊，斜日寒林点暮鸦。</a></div>
+            
+                <div class="sourceimg">
+                    <a target="_blank" href="https://so.gushiwen.cn/shiwenv_4c73b72aed63.aspx">辛弃疾《鹧鸪天·陌上柔桑破嫩芽》</a>
+                </div>
+              
+        </div>
+        <div class="tool">
+            <div class="shoucang"><img id="likeImg5363" name="1" onload="selectLikeMingju(5363)" onclick="changeLikeMingju(5363,&#39;9A100FE101D75C40&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)" src="./Oldsons_files/shou-cang.png" alt="收藏" width="19" height="19"></div>
+            <div class="toolpinglun"><a href="https://so.gushiwen.cn/app/DefaultGwd.aspx"><img src="./Oldsons_files/down-load.png" alt="下载" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a href="javascript:copy(5363)"><img src="./Oldsons_files/co-py.png" alt="复制" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a target="_blank" href="https://so.gushiwen.cn/mingju/juv_361a6df7db04.aspx"><img src="./Oldsons_files/tool-more.png" alt="详情" width="19" height="19"></a></div>
+            <div class="jiucuo"><a href="https://so.gushiwen.cn/jiucuo.aspx?from=http://www.gushiwen.cn/default.aspx&amp;u=%e5%90%8d%e5%8f%a5361a6df7db04%e3%80%8a%e5%b9%b3%e5%86%88%e7%bb%86%e8%8d%89%e9%b8%a3%e9%bb%84%e7%8a%8a%ef%bc%8c%e6%96%9c%e6%97%a5%e5%af%92%e6%9e%97%e7%82%b9%e6%9a%ae%e9%b8%a6%e3%80%82%e3%80%8b">完善</a></div>
+        </div>
+    </div>
+         
+          <div style=" width:1px; height:1px; overflow:hidden;">
+<textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtare72105">塞上秋风鼓角，城头落日旌旗。少年鞍马适相宜。从军乐，莫问所从谁。候骑才通蓟北，先声已动辽西。归期犹及柳依依。春闺月，红袖不须啼。——金朝·元好问《江月晃重山·初到嵩山时作》https://so.gushiwen.cn/shiwenv_c2d38d17f546.aspx</textarea>
+</div>
+          <div class="sons">
+              <div class="cont">
+              <div class="yizhu">
+               <img src="./Oldsons_files/bei-pic.png" width="25" height="25" alt="背诵" onclick="OnBeisong(&#39;c2d38d17f546&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;,&#39;BC5213E82B891ED095651247BB970883&#39;)" id="btnBeisongc2d38d17f546">
+                    <img style="display: block;" src="./Oldsons_files/shang-pic.png" width="25" height="25" alt="赏析" onclick="OnShangxi(&#39;c2d38d17f546&#39;,&#39;BC5213E82B891ED095651247BB970883&#39;)" id="btnShangxic2d38d17f546">
+                    <img style="display: block;" src="./Oldsons_files/zhu-pic.png" width="25" height="25" alt="注释" onclick="OnZhushi(&#39;c2d38d17f546&#39;,&#39;BC5213E82B891ED095651247BB970883&#39;)" id="btnZhushic2d38d17f546">
+                    <img style="display: block;" src="./Oldsons_files/yi-pic.png" width="25" height="25" alt="译文" onclick="OnYiwen(&#39;c2d38d17f546&#39;,&#39;BC5213E82B891ED095651247BB970883&#39;)" id="btnYiwenc2d38d17f546">
+                 
+                    <script type="text/javascript">
+                        document.getElementById("btnShangxic2d38d17f546").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnZhushic2d38d17f546").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnYiwenc2d38d17f546").style.display = "block";
+                    </script>
+                
+               </div>
+              <p><a style="font-size:18px; line-height:22px; height:22px;" href="https://so.gushiwen.cn/shiwenv_c2d38d17f546.aspx" target="_blank"><b>江月晃重山·初到嵩山时作</b></a></p>
+              <p class="source"><a href="https://so.gushiwen.cn/authorv.aspx?name=%e5%85%83%e5%a5%bd%e9%97%ae" target="_blank">元好问</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%e9%87%91%e6%9c%9d" target="_blank">〔金朝〕</a></p>
+                <div class="contson" id="contsonc2d38d17f546">
+                    塞上秋风鼓角，城头落日旌旗。少年鞍马适相宜。从军乐，莫问所从谁。<br>候骑才通蓟北，先声已动辽西。归期犹及柳依依。春闺月，红袖不须啼。 
+                </div>
+              </div>
+              <div class="tool">
+            <div class="shoucang"><img id="likeImg72105" name="1" onload="selectLike(72105)" onclick="changeLike(72105,&#39;693CD396E624A77C&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)" src="./Oldsons_files/shou-cang.png" alt="收藏" width="19" height="19"></div>
+            <div class="toolpinglun"><a href="https://so.gushiwen.cn/app/DefaultGwd.aspx"><img src="./Oldsons_files/down-load.png" alt="下载" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a href="javascript:copy(72105)"><img src="./Oldsons_files/co-py.png" alt="复制" width="19" height="19"></a></div>
+            
+              <div class="toolpinglun"><a href="https://so.gushiwen.cn/shiwenv_c2d38d17f546.aspx" target="_blank"><img src="./Oldsons_files/tool-more.png" alt="详情" width="19" height="19"></a></div>
+                <div class="jiucuo"><a href="https://so.gushiwen.cn/jiucuo.aspx?u=%e8%af%97%e6%96%87c2d38d17f546%e3%80%8a%e6%b1%9f%e6%9c%88%e6%99%83%e9%87%8d%e5%b1%b1%c2%b7%e5%88%9d%e5%88%b0%e5%b5%a9%e5%b1%b1%e6%97%b6%e4%bd%9c%e3%80%8b" target="_blank">完善</a></div>
+            </div>
+            <div id="toolPlayc2d38d17f546" style=" display:none;clear:both;"></div>
+               
+                  <div class="tag">
+                      
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e8%b1%aa%e6%94%be">豪放</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e5%b0%91%e5%b9%b4">少年</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e7%88%b1%e5%9b%bd">爱国</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e5%a3%ae%e5%bf%97">壮志</a>
+                        
+                  </div>
+                
+        </div>
+           
+                <div class="sons" style=" padding-bottom:12px;">
+                 
+                <div class="cont" style=" margin-top:12px;border-bottom:1px dashed #DAD9D1; padding-bottom:7px;">  
+                      <a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/mingju/juv_6a342bc7e841.aspx">妾身悔作商人妇，妾命当逢薄幸夫。</a>
+                       
+                      <span style=" color:#65645F; float:left; margin-left:5px; margin-right:10px;">——</span><a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/shiwenv_8ac496690372.aspx">徐再思《阳春曲·闺怨》</a>
+                      
+                </div>
+                         
+                <div class="cont" style=" margin-top:12px;border-bottom:1px dashed #DAD9D1; padding-bottom:7px;">  
+                      <a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/mingju/juv_ed6a12ecf7bc.aspx">湖上一回首，青山卷白云。</a>
+                       
+                      <span style=" color:#65645F; float:left; margin-left:5px; margin-right:10px;">——</span><a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/shiwenv_94aaf9d0f975.aspx">王维《欹湖》</a>
+                      
+                </div>
+                         
+                <div class="cont" style=" margin-top:12px;border-bottom:1px dashed #DAD9D1; padding-bottom:7px;">  
+                      <a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/mingju/juv_6117afb1f6cb.aspx">人在世间爱欲之中，独生独死，独去独来，当行至趣苦乐之地，身自当之，无有代者。</a>
+                       
+                      <span style=" color:#65645F; float:left; margin-left:5px; margin-right:10px;">——</span><a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/guwen/bookv_46653FD803893E4FD06E04ECD0C64A0B.aspx">《无量寿经·卷下》</a>
+                      
+                </div>
+                         
+                <div class="cont" style=" margin-top:12px;border-bottom:1px dashed #DAD9D1; padding-bottom:7px;">  
+                      <a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/mingju/juv_399d0f02916e.aspx">最爱芦花经雨后，一蓬烟火饭鱼船。</a>
+                       
+                      <span style=" color:#65645F; float:left; margin-left:5px; margin-right:10px;">——</span><a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/shiwenv_ce66c892d5b9.aspx">林逋《咏秋江》</a>
+                      
+                </div>
+                        
+            <div class="cont" style=" margin-top:12px;">
+              <a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/mingju/juv_c29a57b0ecd6.aspx">恨萧萧、无情风雨，夜来揉损琼肌。</a>
+               
+              <span style=" color:#65645F; float:left; margin-left:5px; margin-right:10px;">——</span><a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/shiwenv_7e1d6dccb94b.aspx">李清照《多丽·咏白菊》</a>
+              
+            </div>
+                    
+                </div>
+                 
+          <div style=" width:1px; height:1px; overflow:hidden;">
+<textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtare47188">天欲晓，宫漏穿花声缭绕，窗里星光少。冷露寒侵帐额，残月光沉树杪。梦断锦帷空悄悄，强起愁眉小。——五代·和凝《薄命女·天欲晓》https://so.gushiwen.cn/shiwenv_9aceb84df3e7.aspx</textarea>
+</div>
+          <div class="sons">
+              <div class="cont">
+              <div class="yizhu">
+               <img src="./Oldsons_files/bei-pic.png" width="25" height="25" alt="背诵" onclick="OnBeisong(&#39;9aceb84df3e7&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;,&#39;31D307EB80BF5632978B624B40D54E4B&#39;)" id="btnBeisong9aceb84df3e7">
+                    <img style="display: block;" src="./Oldsons_files/shang-pic.png" width="25" height="25" alt="赏析" onclick="OnShangxi(&#39;9aceb84df3e7&#39;,&#39;31D307EB80BF5632978B624B40D54E4B&#39;)" id="btnShangxi9aceb84df3e7">
+                    <img style="display: block;" src="./Oldsons_files/zhu-pic.png" width="25" height="25" alt="注释" onclick="OnZhushi(&#39;9aceb84df3e7&#39;,&#39;31D307EB80BF5632978B624B40D54E4B&#39;)" id="btnZhushi9aceb84df3e7">
+                    <img style="display: block;" src="./Oldsons_files/yi-pic.png" width="25" height="25" alt="译文" onclick="OnYiwen(&#39;9aceb84df3e7&#39;,&#39;31D307EB80BF5632978B624B40D54E4B&#39;)" id="btnYiwen9aceb84df3e7">
+                 
+                    <script type="text/javascript">
+                        document.getElementById("btnShangxi9aceb84df3e7").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnZhushi9aceb84df3e7").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnYiwen9aceb84df3e7").style.display = "block";
+                    </script>
+                
+               </div>
+              <p><a style="font-size:18px; line-height:22px; height:22px;" href="https://so.gushiwen.cn/shiwenv_9aceb84df3e7.aspx" target="_blank"><b>薄命女·天欲晓</b></a></p>
+              <p class="source"><a href="https://so.gushiwen.cn/authorv.aspx?name=%e5%92%8c%e5%87%9d" target="_blank">和凝</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%e4%ba%94%e4%bb%a3" target="_blank">〔五代〕</a></p>
+                <div class="contson" id="contson9aceb84df3e7">
+                    天欲晓，宫漏穿花声缭绕，窗里星光少。<br>冷露寒侵帐额，残月光沉树杪。梦断锦帷空悄悄，强起愁眉小。 
+                </div>
+              </div>
+              <div class="tool">
+            <div class="shoucang"><img id="likeImg47188" name="1" onload="selectLike(47188)" onclick="changeLike(47188,&#39;9D6744724A031505&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)" src="./Oldsons_files/shou-cang.png" alt="收藏" width="19" height="19"></div>
+            <div class="toolpinglun"><a href="https://so.gushiwen.cn/app/DefaultGwd.aspx"><img src="./Oldsons_files/down-load.png" alt="下载" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a href="javascript:copy(47188)"><img src="./Oldsons_files/co-py.png" alt="复制" width="19" height="19"></a></div>
+            
+              <div class="toolpinglun"><a href="https://so.gushiwen.cn/shiwenv_9aceb84df3e7.aspx" target="_blank"><img src="./Oldsons_files/tool-more.png" alt="详情" width="19" height="19"></a></div>
+                <div class="jiucuo"><a href="https://so.gushiwen.cn/jiucuo.aspx?u=%e8%af%97%e6%96%879aceb84df3e7%e3%80%8a%e8%96%84%e5%91%bd%e5%a5%b3%c2%b7%e5%a4%a9%e6%ac%b2%e6%99%93%e3%80%8b" target="_blank">完善</a></div>
+            </div>
+            <div id="toolPlay9aceb84df3e7" style=" display:none;clear:both;"></div>
+               
+                  <div class="tag">
+                      
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e5%86%99%e4%ba%ba">写人</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e6%84%81%e6%83%85">愁情</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e5%b9%bd%e6%80%a8">幽怨</a>
+                        
+                  </div>
+                
+        </div>
+           
+        <div class="sons">
+            <div class="cont" style=" margin-top:0px; margin-right:0px;margin-left:0px;">
+                <div class="changshi">常识</div>
+                <table>
+                    <tbody><tr>
+                        
+                              <td style=" font-size:12px; width:40px; color:#65645F;">hú</td>
+                          
+                              <td style=" font-size:12px; width:40px; color:#65645F;">hài</td>
+                          
+                    </tr>
+                    <tr>
+                        
+                              <td style=" font-size:18px; font-weight:bold;">胡</td>
+                          
+                              <td style=" font-size:18px; font-weight:bold;">亥</td>
+                          
+                    </tr>
+                </tbody></table>
+                <div class="changshicont">
+                    胡亥（公元前230年—公元前207年），男，嬴姓，赵氏（一说嬴姓秦氏或赵姓秦氏），名胡亥，秦始皇第十八子，公子扶苏之弟，秦朝第二位皇帝，即秦二世，亦称二世皇帝，公元前210年―公元前207年在位。
+                </div>
+            </div>
+        </div>
+       
+          <div style=" width:1px; height:1px; overflow:hidden;">
+<textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtare69235">一树古梅花数亩，城中客子乍来看。不知花气清相逼，但觉山深春尚寒。——清代·林古度《吉祥寺古梅》https://so.gushiwen.cn/shiwenv_cda106dcdc0a.aspx</textarea>
+</div>
+          <div class="sons">
+              <div class="cont">
+              <div class="yizhu">
+               <img src="./Oldsons_files/bei-pic.png" width="25" height="25" alt="背诵" onclick="OnBeisong(&#39;cda106dcdc0a&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;,&#39;091540D90022BED8F839708AD62483BE&#39;)" id="btnBeisongcda106dcdc0a">
+                    <img style="display: block;" src="./Oldsons_files/shang-pic.png" width="25" height="25" alt="赏析" onclick="OnShangxi(&#39;cda106dcdc0a&#39;,&#39;091540D90022BED8F839708AD62483BE&#39;)" id="btnShangxicda106dcdc0a">
+                    <img style="display: block;" src="./Oldsons_files/zhu-pic.png" width="25" height="25" alt="注释" onclick="OnZhushi(&#39;cda106dcdc0a&#39;,&#39;091540D90022BED8F839708AD62483BE&#39;)" id="btnZhushicda106dcdc0a">
+                    <img style="display: block;" src="./Oldsons_files/yi-pic.png" width="25" height="25" alt="译文" onclick="OnYiwen(&#39;cda106dcdc0a&#39;,&#39;091540D90022BED8F839708AD62483BE&#39;)" id="btnYiwencda106dcdc0a">
+                 
+                    <script type="text/javascript">
+                        document.getElementById("btnShangxicda106dcdc0a").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnZhushicda106dcdc0a").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnYiwencda106dcdc0a").style.display = "block";
+                    </script>
+                
+               </div>
+              <p><a style="font-size:18px; line-height:22px; height:22px;" href="https://so.gushiwen.cn/shiwenv_cda106dcdc0a.aspx" target="_blank"><b>吉祥寺古梅</b></a></p>
+              <p class="source"><a href="https://so.gushiwen.cn/authorv.aspx?name=%e6%9e%97%e5%8f%a4%e5%ba%a6" target="_blank">林古度</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%e6%b8%85%e4%bb%a3" target="_blank">〔清代〕</a></p>
+                <div class="contson" id="contsoncda106dcdc0a">
+                    一树古梅花数亩，城中客子乍来看。<br>不知花气清相逼，但觉山深春尚寒。 
+                </div>
+              </div>
+              <div class="tool">
+            <div class="shoucang"><img id="likeImg69235" name="1" onload="selectLike(69235)" onclick="changeLike(69235,&#39;44651EEB3A313ABE&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)" src="./Oldsons_files/shou-cang.png" alt="收藏" width="19" height="19"></div>
+            <div class="toolpinglun"><a href="https://so.gushiwen.cn/app/DefaultGwd.aspx"><img src="./Oldsons_files/down-load.png" alt="下载" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a href="javascript:copy(69235)"><img src="./Oldsons_files/co-py.png" alt="复制" width="19" height="19"></a></div>
+            
+              <div class="toolpinglun"><a href="https://so.gushiwen.cn/shiwenv_cda106dcdc0a.aspx" target="_blank"><img src="./Oldsons_files/tool-more.png" alt="详情" width="19" height="19"></a></div>
+                <div class="jiucuo"><a href="https://so.gushiwen.cn/jiucuo.aspx?u=%e8%af%97%e6%96%87cda106dcdc0a%e3%80%8a%e5%90%89%e7%a5%a5%e5%af%ba%e5%8f%a4%e6%a2%85%e3%80%8b" target="_blank">完善</a></div>
+            </div>
+            <div id="toolPlaycda106dcdc0a" style=" display:none;clear:both;"></div>
+               
+                  <div class="tag">
+                      
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e5%86%99%e8%8a%b1">写花</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e6%a2%85%e8%8a%b1">梅花</a>
+                        
+                  </div>
+                
+        </div>
+           
+          <div style=" width:1px; height:1px; overflow:hidden;">
+<textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtare7861">永王正月东出师，天子遥分龙虎旗。楼船一举风波静，江汉翻为燕鹜池。三川北虏乱如麻，四海南奔似永嘉。但用东山谢安石，为君谈笑静胡沙。雷鼓嘈嘈喧武昌，云旗猎猎过寻阳。秋毫不犯三吴悦，春日遥看五色光。龙盘虎踞帝王州，帝子金陵访故丘。春风试暖昭阳殿，明月还过鳷鹊楼。二帝巡游俱未回，五陵松柏使人哀。诸侯不救河南地，更喜贤王远道来。丹阳北固是吴关，画出楼台云水间。千岩烽火连沧海，两岸旌旗绕碧山。王出三江按五湖，楼船跨海次扬都。战舰森森罗虎士，征帆一一引龙驹。长风挂席势难回，海动山倾古月摧。君看帝子浮江日，何似龙骧出峡来。祖龙浮海不成桥，汉武寻阳空射蛟。我王楼舰轻秦汉，却似文皇欲渡辽。帝宠贤王入楚关，扫清江汉始应还。初从云梦开朱邸，更取金陵作小山。试借君王玉马鞭，指挥戎虏坐琼筵。南风一扫胡尘静，西入长安到日边。——唐代·李白《永王东巡歌十一首》https://so.gushiwen.cn/shiwenv_f3449f1400aa.aspx</textarea>
+</div>
+          <div class="sons">
+              <div class="cont">
+              <div class="yizhu">
+               <img src="./Oldsons_files/bei-pic.png" width="25" height="25" alt="背诵" onclick="OnBeisong(&#39;f3449f1400aa&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;,&#39;5966F6556C6A46096E640C0330C16CD3&#39;)" id="btnBeisongf3449f1400aa">
+                    <img style="display: block;" src="./Oldsons_files/shang-pic.png" width="25" height="25" alt="赏析" onclick="OnShangxi(&#39;f3449f1400aa&#39;,&#39;5966F6556C6A46096E640C0330C16CD3&#39;)" id="btnShangxif3449f1400aa">
+                    <img style="display: block;" src="./Oldsons_files/zhu-pic.png" width="25" height="25" alt="注释" onclick="OnZhushi(&#39;f3449f1400aa&#39;,&#39;5966F6556C6A46096E640C0330C16CD3&#39;)" id="btnZhushif3449f1400aa">
+                    <img style="display: block;" src="./Oldsons_files/yi-pic.png" width="25" height="25" alt="译文" onclick="OnYiwen(&#39;f3449f1400aa&#39;,&#39;5966F6556C6A46096E640C0330C16CD3&#39;)" id="btnYiwenf3449f1400aa">
+                 
+                    <script type="text/javascript">
+                        document.getElementById("btnShangxif3449f1400aa").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnZhushif3449f1400aa").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnYiwenf3449f1400aa").style.display = "block";
+                    </script>
+                
+               </div>
+              <p><a style="font-size:18px; line-height:22px; height:22px;" href="https://so.gushiwen.cn/shiwenv_f3449f1400aa.aspx" target="_blank"><b>永王东巡歌十一首</b></a></p>
+              <p class="source"><a href="https://so.gushiwen.cn/authorv.aspx?name=%e6%9d%8e%e7%99%bd" target="_blank">李白</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%e5%94%90%e4%bb%a3" target="_blank">〔唐代〕</a></p>
+                <div class="contson" id="contsonf3449f1400aa">
+                    <p>永王正月东出师，天子遥分龙虎旗。<br>楼船一举风波静，江汉翻为燕鹜池。</p>
+<p>三川北虏乱如麻，四海南奔似永嘉。<br>但用东山谢安石，为君谈笑静胡沙。</p>
+<p>雷鼓嘈嘈喧武昌，云旗猎猎过寻阳。<br>秋毫不犯三吴悦，春日遥看五色光。</p>
+<p>龙盘虎踞帝王州，帝子金陵访故丘。<br>春风试暖昭阳殿，明月还过鳷鹊楼。</p>
+<p>二帝巡游俱未回，五陵松柏使人哀。<br>诸侯不救河南地，更喜贤王远道来。</p>
+<p>丹阳北固是吴关，画出楼台云水间。<br>千岩烽火连沧海，两岸旌旗绕碧山。</p>
+<p>王出三江按五湖，楼船跨海次扬都。<br>战舰森森罗虎士，征帆一一引龙驹。</p>
+<p>长风挂席势难回，海动山倾古月摧。<br>君看帝子浮江日，何似龙骧出峡来。</p>
+<p>祖龙浮海不成桥，汉武寻阳空射蛟。<br>我王楼舰轻秦汉，却似文皇欲渡辽。</p>
+<p>帝宠贤王入楚关，扫清江汉始应还。<br>初从云梦开朱邸，更取金陵作小山。</p>
+<p>试借君王玉马鞭，指挥戎虏坐琼筵。<br>南风一扫胡尘静，西入长安到日边。</p>
+                </div>
+              </div>
+              <div class="tool">
+            <div class="shoucang"><img id="likeImg7861" name="1" onload="selectLike(7861)" onclick="changeLike(7861,&#39;E2296A293E736AC0&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)" src="./Oldsons_files/shou-cang.png" alt="收藏" width="19" height="19"></div>
+            <div class="toolpinglun"><a href="https://so.gushiwen.cn/app/DefaultGwd.aspx"><img src="./Oldsons_files/down-load.png" alt="下载" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a href="javascript:copy(7861)"><img src="./Oldsons_files/co-py.png" alt="复制" width="19" height="19"></a></div>
+            
+              <div class="toolpinglun"><a href="https://so.gushiwen.cn/shiwenv_f3449f1400aa.aspx" target="_blank"><img src="./Oldsons_files/tool-more.png" alt="详情" width="19" height="19"></a></div>
+                <div class="jiucuo"><a href="https://so.gushiwen.cn/jiucuo.aspx?u=%e8%af%97%e6%96%87f3449f1400aa%e3%80%8a%e6%b0%b8%e7%8e%8b%e4%b8%9c%e5%b7%a1%e6%ad%8c%e5%8d%81%e4%b8%80%e9%a6%96%e3%80%8b" target="_blank">完善</a></div>
+            </div>
+            <div id="toolPlayf3449f1400aa" style=" display:none;clear:both;"></div>
+               
+                  <div class="tag">
+                      
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e6%88%98%e4%ba%89">战争</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e7%88%b1%e5%9b%bd">爱国</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e6%8a%b1%e8%b4%9f">抱负</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e7%bb%84%e8%af%97">组诗</a>
+                        
+                  </div>
+                
+        </div>
+           
+    <div style=" width:1px; height:1px; overflow:hidden;">
+        <textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtare1992">东山老，可堪岁晚，独听桓筝。https://m.gushiwen.cn/mingju/juv_d0cc7c842099.aspx</textarea>
+    </div>
+    <div class="sons">
+        <div class="contImg">
+            <img src="./Oldsons_files/B38A17D34E9DADE173BCB6BF003BF665.jpg" alt="东山老，可堪岁晚，独听桓筝。" width="100%">
+            <div class="info">沈士充 寒塘渔艇图局部</div>
+            <div class="jucount"><a target="_blank" href="https://so.gushiwen.cn/mingju/juv_d0cc7c842099.aspx">东山老，可堪岁晚，独听桓筝。</a></div>
+            
+                <div class="sourceimg">
+                    <a target="_blank" href="https://so.gushiwen.cn/shiwenv_1179c36f6cc5.aspx">叶梦得《八声甘州·寿阳楼八公山作》</a>
+                </div>
+              
+        </div>
+        <div class="tool">
+            <div class="shoucang"><img id="likeImg1992" name="1" onload="selectLikeMingju(1992)" onclick="changeLikeMingju(1992,&#39;729E6C85529311C1&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)" src="./Oldsons_files/shou-cang.png" alt="收藏" width="19" height="19"></div>
+            <div class="toolpinglun"><a href="https://so.gushiwen.cn/app/DefaultGwd.aspx"><img src="./Oldsons_files/down-load.png" alt="下载" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a href="javascript:copy(1992)"><img src="./Oldsons_files/co-py.png" alt="复制" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a target="_blank" href="https://so.gushiwen.cn/mingju/juv_d0cc7c842099.aspx"><img src="./Oldsons_files/tool-more.png" alt="详情" width="19" height="19"></a></div>
+            <div class="jiucuo"><a href="https://so.gushiwen.cn/jiucuo.aspx?from=http://www.gushiwen.cn/default.aspx&amp;u=%e5%90%8d%e5%8f%a5d0cc7c842099%e3%80%8a%e4%b8%9c%e5%b1%b1%e8%80%81%ef%bc%8c%e5%8f%af%e5%a0%aa%e5%b2%81%e6%99%9a%ef%bc%8c%e7%8b%ac%e5%90%ac%e6%a1%93%e7%ad%9d%e3%80%82%e3%80%8b">完善</a></div>
+        </div>
+    </div>
+         
+          <div style=" width:1px; height:1px; overflow:hidden;">
+<textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtare65">君子于役，不知其期。曷至哉？鸡栖于埘，日之夕矣，羊牛下来。君子于役，如之何勿思！君子于役，不日不月。曷其有佸？鸡栖于桀，日之夕矣，羊牛下括。君子于役，苟无饥渴！——先秦·佚名《君子于役》https://so.gushiwen.cn/shiwenv_fe6a8d52e5ad.aspx</textarea>
+</div>
+          <div class="sons">
+              <div class="cont">
+              <div class="yizhu">
+               <img src="./Oldsons_files/bei-pic.png" width="25" height="25" alt="背诵" onclick="OnBeisong(&#39;fe6a8d52e5ad&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;,&#39;21B5F756266347C5A06DF9AF5127537C&#39;)" id="btnBeisongfe6a8d52e5ad">
+                    <img style="display: block;" src="./Oldsons_files/shang-pic.png" width="25" height="25" alt="赏析" onclick="OnShangxi(&#39;fe6a8d52e5ad&#39;,&#39;21B5F756266347C5A06DF9AF5127537C&#39;)" id="btnShangxife6a8d52e5ad">
+                    <img style="display: block;" src="./Oldsons_files/zhu-pic.png" width="25" height="25" alt="注释" onclick="OnZhushi(&#39;fe6a8d52e5ad&#39;,&#39;21B5F756266347C5A06DF9AF5127537C&#39;)" id="btnZhushife6a8d52e5ad">
+                    <img style="display: block;" src="./Oldsons_files/yi-pic.png" width="25" height="25" alt="译文" onclick="OnYiwen(&#39;fe6a8d52e5ad&#39;,&#39;21B5F756266347C5A06DF9AF5127537C&#39;)" id="btnYiwenfe6a8d52e5ad">
+                 
+                    <script type="text/javascript">
+                        document.getElementById("btnShangxife6a8d52e5ad").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnZhushife6a8d52e5ad").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnYiwenfe6a8d52e5ad").style.display = "block";
+                    </script>
+                
+               </div>
+              <p><a style="font-size:18px; line-height:22px; height:22px;" href="https://so.gushiwen.cn/shiwenv_fe6a8d52e5ad.aspx" target="_blank"><b>君子于役</b></a></p>
+              <p class="source"><a href="https://so.gushiwen.cn/authorv.aspx?name=%e4%bd%9a%e5%90%8d" target="_blank">佚名</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%e5%85%88%e7%a7%a6" target="_blank">〔先秦〕</a></p>
+                <div class="contson" id="contsonfe6a8d52e5ad">
+                    君子于役，不知其期。曷至哉？鸡栖于埘，日之夕矣，羊牛下来。君子于役，如之何勿思！<br>君子于役，不日不月。曷其有佸？鸡栖于桀，日之夕矣，羊牛下括。君子于役，苟无饥渴！ 
+                </div>
+              </div>
+              <div class="tool">
+            <div class="shoucang"><img id="likeImg65" name="1" onload="selectLike(65)" onclick="changeLike(65,&#39;7AF591C487B98664&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)" src="./Oldsons_files/shou-cang.png" alt="收藏" width="19" height="19"></div>
+            <div class="toolpinglun"><a href="https://so.gushiwen.cn/app/DefaultGwd.aspx"><img src="./Oldsons_files/down-load.png" alt="下载" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a href="javascript:copy(65)"><img src="./Oldsons_files/co-py.png" alt="复制" width="19" height="19"></a></div>
+             
+              <div class="toolpinglun"><a href="javascript:Play(&#39;fe6a8d52e5ad&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)"><img id="speakerimgfe6a8d52e5ad" src="./Oldsons_files/speak-er.png" alt="" width="19" height="19"></a></div>
+              
+              <div class="toolpinglun"><a href="https://so.gushiwen.cn/shiwenv_fe6a8d52e5ad.aspx" target="_blank"><img src="./Oldsons_files/tool-more.png" alt="详情" width="19" height="19"></a></div>
+                <div class="jiucuo"><a href="https://so.gushiwen.cn/jiucuo.aspx?u=%e8%af%97%e6%96%87fe6a8d52e5ad%e3%80%8a%e5%90%9b%e5%ad%90%e4%ba%8e%e5%bd%b9%e3%80%8b" target="_blank">完善</a></div>
+            </div>
+            <div id="toolPlayfe6a8d52e5ad" style=" display:none;clear:both;"></div>
+               
+                  <div class="tag">
+                      
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e8%af%97%e7%bb%8f">诗经</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e9%97%ba%e6%80%a8">闺怨</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e6%88%98%e4%ba%89">战争</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e6%b0%91%e8%b0%a3">民谣</a>
+                        
+                  </div>
+                
+        </div>
+           
+          <div style=" width:1px; height:1px; overflow:hidden;">
+<textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtare71105">齐有富人，家累千金。其二子甚愚，其父又不教之。一日，艾子谓其父曰：“君之子虽美，而不通世务，他日曷能克其家？”父怒曰：“吾之子敏而且恃多能，岂有不通世务者耶？”艾子曰：“不须试之他，但问君之子，所食者米，从何来？若知之，吾当妄言之罪。”父遂呼其子问之。其子嘻然笑曰：“吾岂不知此也？每以布囊取来。”其父愀然改容曰：“子之愚甚也！彼米不是田中来？”艾子曰：“非其父不生其子。”——宋代·苏轼《富人之子》https://so.gushiwen.cn/shiwenv_75d82c0ac549.aspx</textarea>
+</div>
+          <div class="sons">
+              <div class="cont">
+              <div class="yizhu">
+               <img src="./Oldsons_files/bei-pic.png" width="25" height="25" alt="背诵" onclick="OnBeisong(&#39;75d82c0ac549&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;,&#39;A2306D523417916D0B96404AD8C4A3A2&#39;)" id="btnBeisong75d82c0ac549">
+                    <img style="display: block;" src="./Oldsons_files/shang-pic.png" width="25" height="25" alt="赏析" onclick="OnShangxi(&#39;75d82c0ac549&#39;,&#39;A2306D523417916D0B96404AD8C4A3A2&#39;)" id="btnShangxi75d82c0ac549">
+                    <img style="display: block;" src="./Oldsons_files/zhu-pic.png" width="25" height="25" alt="注释" onclick="OnZhushi(&#39;75d82c0ac549&#39;,&#39;A2306D523417916D0B96404AD8C4A3A2&#39;)" id="btnZhushi75d82c0ac549">
+                    <img style="display: block;" src="./Oldsons_files/yi-pic.png" width="25" height="25" alt="译文" onclick="OnYiwen(&#39;75d82c0ac549&#39;,&#39;A2306D523417916D0B96404AD8C4A3A2&#39;)" id="btnYiwen75d82c0ac549">
+                 
+                    <script type="text/javascript">
+                        document.getElementById("btnShangxi75d82c0ac549").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnZhushi75d82c0ac549").style.display = "block";
+                    </script>
+                
+                    <script type="text/javascript">
+                        document.getElementById("btnYiwen75d82c0ac549").style.display = "block";
+                    </script>
+                
+               </div>
+              <p><a style="font-size:18px; line-height:22px; height:22px;" href="https://so.gushiwen.cn/shiwenv_75d82c0ac549.aspx" target="_blank"><b>富人之子</b></a></p>
+              <p class="source"><a href="https://so.gushiwen.cn/authorv.aspx?name=%e8%8b%8f%e8%bd%bc" target="_blank">苏轼</a><a href="https://so.gushiwen.cn/shiwens/default.aspx?cstr=%e5%ae%8b%e4%bb%a3" target="_blank">〔宋代〕</a></p>
+                <div class="contson" id="contson75d82c0ac549">
+                    齐有富人，家累千金。其二子甚愚，其父又不教之。<br>一日，艾子谓其父曰：“君之子虽美，而不通世务，他日曷能克其家？”<br>父怒曰：“吾之子敏而且恃多能，岂有不通世务者耶？”<br>艾子曰：“不须试之他，但问君之子，所食者米，从何来？若知之，吾当妄言之罪。”<br>父遂呼其子问之。其子嘻然笑曰：“吾岂不知此也？每以布囊取来。”<br>其父愀然改容曰：“子之愚甚也！彼米不是田中来？”<br>艾子曰：“非其父不生其子。” 
+                </div>
+              </div>
+              <div class="tool">
+            <div class="shoucang"><img id="likeImg71105" name="1" onload="selectLike(71105)" onclick="changeLike(71105,&#39;AE97C02801403961&#39;,&#39;http://www.gushiwen.cn/default.aspx&#39;)" src="./Oldsons_files/shou-cang.png" alt="收藏" width="19" height="19"></div>
+            <div class="toolpinglun"><a href="https://so.gushiwen.cn/app/DefaultGwd.aspx"><img src="./Oldsons_files/down-load.png" alt="下载" width="19" height="19"></a></div>
+            <div class="toolpinglun"><a href="javascript:copy(71105)"><img src="./Oldsons_files/co-py.png" alt="复制" width="19" height="19"></a></div>
+            
+              <div class="toolpinglun"><a href="https://so.gushiwen.cn/shiwenv_75d82c0ac549.aspx" target="_blank"><img src="./Oldsons_files/tool-more.png" alt="详情" width="19" height="19"></a></div>
+                <div class="jiucuo"><a href="https://so.gushiwen.cn/jiucuo.aspx?u=%e8%af%97%e6%96%8775d82c0ac549%e3%80%8a%e5%af%8c%e4%ba%ba%e4%b9%8b%e5%ad%90%e3%80%8b" target="_blank">完善</a></div>
+            </div>
+            <div id="toolPlay75d82c0ac549" style=" display:none;clear:both;"></div>
+               
+                  <div class="tag">
+                      
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e5%b0%8f%e5%ad%a6%e6%96%87%e8%a8%80%e6%96%87">小学文言文</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e5%af%93%e8%a8%80">寓言</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e6%95%85%e4%ba%8b">故事</a>
+                        
+                            <a target="_blank" href="https://so.gushiwen.cn/shiwens/default.aspx?tstr=%e5%93%b2%e7%90%86">哲理</a>
+                        
+                  </div>
+                
+        </div>
+           
+                <div class="sons" style=" padding-bottom:12px;">
+                 
+                <div class="cont" style=" margin-top:12px;border-bottom:1px dashed #DAD9D1; padding-bottom:7px;">  
+                      <a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/mingju/juv_cfbe92046146.aspx">三年笛里关山月，万国兵前草木风。</a>
+                       
+                      <span style=" color:#65645F; float:left; margin-left:5px; margin-right:10px;">——</span><a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/shiwenv_81282178ab78.aspx">杜甫《洗兵马》</a>
+                      
+                </div>
+                         
+                <div class="cont" style=" margin-top:12px;border-bottom:1px dashed #DAD9D1; padding-bottom:7px;">  
+                      <a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/mingju/juv_9e531cd2737c.aspx">香冷金猊，被翻红浪，起来慵自梳头。</a>
+                       
+                      <span style=" color:#65645F; float:left; margin-left:5px; margin-right:10px;">——</span><a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/shiwenv_96689ee0c664.aspx">李清照《凤凰台上忆吹箫·香冷金猊》</a>
+                      
+                </div>
+                         
+                <div class="cont" style=" margin-top:12px;border-bottom:1px dashed #DAD9D1; padding-bottom:7px;">  
+                      <a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/mingju/juv_159bdb62c46d.aspx">史有三长：才、学、识。</a>
+                       
+                      <span style=" color:#65645F; float:left; margin-left:5px; margin-right:10px;">——</span><a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/guwen/bookv_46653FD803893E4F7F86AC3525DB66C4.aspx">《新唐书·列传·卷五十七》</a>
+                      
+                </div>
+                         
+                <div class="cont" style=" margin-top:12px;border-bottom:1px dashed #DAD9D1; padding-bottom:7px;">  
+                      <a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/mingju/juv_201e4d733b3c.aspx">木与木相摩则然，金与火相守则流</a>
+                       
+                      <span style=" color:#65645F; float:left; margin-left:5px; margin-right:10px;">——</span><a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/guwen/bookv_46653FD803893E4FD8E982B61FC25AC4.aspx">《庄子·杂篇·外物》</a>
+                      
+                </div>
+                        
+            <div class="cont" style=" margin-top:12px;">
+              <a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/mingju/juv_6f4f8913a82f.aspx">北山输绿涨横陂，直堑回塘滟滟时。</a>
+               
+              <span style=" color:#65645F; float:left; margin-left:5px; margin-right:10px;">——</span><a style=" float:left;" target="_blank" href="https://so.gushiwen.cn/shiwenv_c571a5d4c35f.aspx">王安石《北山》</a>
+              
+            </div>
+                    
+                </div>
+                
+
+          <form id="FromPage" method="get" action="https://www.gushiwen.cn/default.aspx" onsubmit="return PageSubmit()">
+            <div class="pagesright">
+            
+              <a id="amore" class="amore" href="https://www.gushiwen.cn/default_2.aspx">下一页</a>
+               
+                      <a style=" color:#808080;background-color:#e7e6d8;">上一页</a>
+                      
+                      <span style=" background-color:#E1E0C7; border:0px; margin-top:22px; width:auto;">/ 4页</span>
+                      <span class="curent"><input id="putpage" name="page" value="1" autocomplete="off" onblur="SubPage()"></span>
+                      <label id="temppage" style="display:none;">1</label>
+                      <label id="sumPage" style="display:none;">4</label>
+         </div>
+         </form>
+         
+    </div>
+  
+    <div class="right">
+        <div class="juzioncont">
+            <img style=" float:left; margin:10px; margin-right:0px;" src="./Oldsons_files/erma_guwendao.png" width="80" height="80"><p></p><center style="font-size:18px; margin-top:14px;">关注公众号</center><p></p><p></p><center style="font-size:18px;margin-top:5px;">将古诗文随身携带</center><p></p>
+        </div>
+        <div class="sons">
+        <div class="title">
+        <div class="titleleft"></div>
+            诗文
+        </div>
+<div class="cont">
+    <a href="https://so.gushiwen.cn/gushi/tangshi.aspx" target="_blank">唐诗三百</a>
+    <a href="https://so.gushiwen.cn/gushi/sanbai.aspx" target="_blank">古诗三百</a>
+    <a href="https://so.gushiwen.cn/gushi/songsan.aspx" target="_blank">宋词三百</a>
+    <a href="https://so.gushiwen.cn/gushi/xiaoxue.aspx" target="_blank">小学古诗</a>
+    <a href="https://so.gushiwen.cn/gushi/chuzhong.aspx" target="_blank">初中古诗</a>
+    <a href="https://so.gushiwen.cn/gushi/gaozhong.aspx" target="_blank">高中古诗</a>
+    <a href="https://so.gushiwen.cn/wenyan/xiaowen.aspx" target="_blank">小学文言</a>
+    <a href="https://so.gushiwen.cn/wenyan/chuwen.aspx" target="_blank">初中文言</a>
+    <a href="https://so.gushiwen.cn/wenyan/gaowen.aspx" target="_blank">高中文言</a>
+    <a href="https://so.gushiwen.cn/gushi/songci.aspx" target="_blank">宋词精选</a>
+    <a href="https://so.gushiwen.cn/gushi/shijiu.aspx" target="_blank">古诗十九</a>
+    <a href="https://so.gushiwen.cn/gushi/shijing.aspx" target="_blank">诗经</a>
+    <a href="https://so.gushiwen.cn/gushi/chuci.aspx" target="_blank">楚辞</a>
+    <a href="https://so.gushiwen.cn/gushi/yuefu.aspx" target="_blank">乐府</a>
+    <a href="https://so.gushiwen.cn/gushi/xiejing.aspx" target="_blank">写景</a>
+    <a href="https://so.gushiwen.cn/gushi/yongwu.aspx" target="_blank">咏物</a>
+    <a href="https://so.gushiwen.cn/gushi/chuntian.aspx" target="_blank">春天</a>
+    <a href="https://so.gushiwen.cn/gushi/xiatian.aspx" target="_blank">夏天</a>
+    <a href="https://so.gushiwen.cn/gushi/qiutian.aspx" target="_blank">秋天</a>
+    <a href="https://so.gushiwen.cn/gushi/dongtian.aspx" target="_blank">冬天</a>
+    <a href="https://so.gushiwen.cn/gushi/yu.aspx" target="_blank">写雨</a>
+    <a href="https://so.gushiwen.cn/gushi/xue.aspx" target="_blank">写雪</a>
+    <a href="https://so.gushiwen.cn/gushi/feng.aspx" target="_blank">写风</a>
+    <a href="https://so.gushiwen.cn/gushi/hua.aspx" target="_blank">写花</a>
+    <a href="https://so.gushiwen.cn/gushi/meihua.aspx" target="_blank">梅花</a>
+    <a href="https://so.gushiwen.cn/gushi/hehua.aspx" target="_blank">荷花</a>
+    <a href="https://so.gushiwen.cn/gushi/juhua.aspx" target="_blank">菊花</a>
+    <a href="https://so.gushiwen.cn/gushi/liushu.aspx" target="_blank">柳树</a>
+    <a href="https://so.gushiwen.cn/gushi/yueliang.aspx" target="_blank">月亮</a>
+    <a href="https://so.gushiwen.cn/gushi/shanshui.aspx" target="_blank">山水</a>
+    <a href="https://so.gushiwen.cn/gushi/shan.aspx" target="_blank">写山</a>
+    <a href="https://so.gushiwen.cn/gushi/shui.aspx" target="_blank">写水</a>
+    <a href="https://so.gushiwen.cn/gushi/changjiang.aspx" target="_blank">长江</a>
+    <a href="https://so.gushiwen.cn/gushi/huanghe.aspx" target="_blank">黄河</a>
+    <a href="https://so.gushiwen.cn/gushi/ertong.aspx" target="_blank">儿童</a>
+    <a href="https://so.gushiwen.cn/gushi/niao.aspx" target="_blank">写鸟</a>
+    <a href="https://so.gushiwen.cn/gushi/ma.aspx" target="_blank">写马</a>
+    <a href="https://so.gushiwen.cn/gushi/tianyuan.aspx" target="_blank">田园</a>
+    <a href="https://so.gushiwen.cn/gushi/biansai.aspx" target="_blank">边塞</a>
+    <a href="https://so.gushiwen.cn/gushi/diming.aspx" target="_blank">地名</a>
+    <a href="https://so.gushiwen.cn/gushi/jieri.aspx" target="_blank">节日</a>
+    <a href="https://so.gushiwen.cn/gushi/chunjie.aspx" target="_blank">春节</a>
+    <a href="https://so.gushiwen.cn/gushi/yuanxiao.aspx" target="_blank">元宵</a>
+    <a href="https://so.gushiwen.cn/gushi/hanshi.aspx" target="_blank">寒食</a>
+    <a href="https://so.gushiwen.cn/gushi/qingming.aspx" target="_blank">清明</a>
+    <a href="https://so.gushiwen.cn/gushi/duanwu.aspx" target="_blank">端午</a>
+    <a href="https://so.gushiwen.cn/gushi/qixi.aspx" target="_blank">七夕</a>
+    <a href="https://so.gushiwen.cn/gushi/zhongqiu.aspx" target="_blank">中秋</a>
+    <a href="https://so.gushiwen.cn/gushi/chongyang.aspx" target="_blank">重阳</a>
+    <a href="https://so.gushiwen.cn/gushi/huaigu.aspx" target="_blank">怀古</a>
+    <a href="https://so.gushiwen.cn/gushi/shuqing.aspx" target="_blank">抒情</a>
+    <a href="https://so.gushiwen.cn/gushi/aiguo.aspx" target="_blank">爱国</a>
+    <a href="https://so.gushiwen.cn/gushi/libie.aspx" target="_blank">离别</a>
+    <a href="https://so.gushiwen.cn/gushi/songbie.aspx" target="_blank">送别</a>
+    <a href="https://so.gushiwen.cn/gushi/sixiang.aspx" target="_blank">思乡</a>
+    <a href="https://so.gushiwen.cn/gushi/sinian.aspx" target="_blank">思念</a>
+    <a href="https://so.gushiwen.cn/gushi/aiqing.aspx" target="_blank">爱情</a>
+    <a href="https://so.gushiwen.cn/gushi/lizhi.aspx" target="_blank">励志</a>
+    <a href="https://so.gushiwen.cn/gushi/zheli.aspx" target="_blank">哲理</a>
+    <a href="https://so.gushiwen.cn/gushi/guiyuan.aspx" target="_blank">闺怨</a>
+    <a href="https://so.gushiwen.cn/gushi/daowang.aspx" target="_blank">悼亡</a>
+    <a href="https://so.gushiwen.cn/gushi/xieren.aspx" target="_blank">写人</a>
+    <a href="https://so.gushiwen.cn/gushi/laoshi.aspx" target="_blank">老师</a>
+    <a href="https://so.gushiwen.cn/gushi/muqin.aspx" target="_blank">母亲</a>
+    <a href="https://so.gushiwen.cn/gushi/youqing.aspx" target="_blank">友情</a>
+    <a href="https://so.gushiwen.cn/gushi/zhanzheng.aspx" target="_blank">战争</a>
+    <a href="https://so.gushiwen.cn/gushi/dushu.aspx" target="_blank">读书</a>
+    <a href="https://so.gushiwen.cn/gushi/xishi.aspx" target="_blank">惜时</a>
+    <a href="https://so.gushiwen.cn/gushi/youguo.aspx" target="_blank">忧民</a>
+    <a href="https://so.gushiwen.cn/gushi/wanyue.aspx" target="_blank">婉约</a>
+    <a href="https://so.gushiwen.cn/gushi/haofang.aspx" target="_blank">豪放</a>
+    <a href="https://so.gushiwen.cn/gushi/minyao.aspx" target="_blank">民谣</a>
+    <a href="https://so.gushiwen.cn/wenyan/guanzhi.aspx" target="_blank">古文观止</a>
+    <a href="https://so.gushiwen.cn/shiwens/">更多&gt;&gt;</a>
+</div>
+</div>
+        <div class="juzioncont">
+          <img style=" float:left; margin:10px; margin-right:0px;" src="./Oldsons_files/appdownGwd2021.png" width="80" height="80"><p></p><center style="font-size:18px; margin-top:14px;">扫码下载</center><p></p><p></p><center style="font-size:18px; margin-top:5px;">古文岛客户端</center><p></p>
+        </div>
+<div class="sons">
+        <div class="title">
+        <div class="titleleft"></div>
+            名句
+        </div>
+      <div class="cont">
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%86%99%e6%99%af" target="_blank">写景</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%92%8f%e7%89%a9" target="_blank">咏物</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%98%a5%e5%a4%a9" target="_blank">春天</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%a4%8f%e5%a4%a9" target="_blank">夏天</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e7%a7%8b%e5%a4%a9" target="_blank">秋天</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%86%ac%e5%a4%a9" target="_blank">冬天</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%86%99%e9%9b%a8" target="_blank">写雨</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%86%99%e9%9b%aa" target="_blank">写雪</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%86%99%e9%a3%8e" target="_blank">写风</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%86%99%e8%8a%b1" target="_blank">写花</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%a2%85%e8%8a%b1" target="_blank">梅花</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e8%8d%b7%e8%8a%b1" target="_blank">荷花</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e8%8f%8a%e8%8a%b1" target="_blank">菊花</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%9f%b3%e6%a0%91" target="_blank">柳树</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%9c%88%e4%ba%ae" target="_blank">月亮</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%b1%b1%e6%b0%b4" target="_blank">山水</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%86%99%e5%b1%b1" target="_blank">写山</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%86%99%e6%b0%b4" target="_blank">写水</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e9%95%bf%e6%b1%9f" target="_blank">长江</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e9%bb%84%e6%b2%b3" target="_blank">黄河</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%84%bf%e7%ab%a5" target="_blank">儿童</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%86%99%e9%b8%9f" target="_blank">写鸟</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%86%99%e9%a9%ac" target="_blank">写马</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e7%94%b0%e5%9b%ad" target="_blank">田园</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e8%be%b9%e5%a1%9e" target="_blank">边塞</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%9c%b0%e5%90%8d" target="_blank">地名</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%8a%92%e6%83%85" target="_blank">抒情</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e7%88%b1%e5%9b%bd" target="_blank">爱国</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e7%a6%bb%e5%88%ab" target="_blank">离别</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e9%80%81%e5%88%ab" target="_blank">送别</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%80%9d%e4%b9%a1" target="_blank">思乡</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%80%9d%e5%bf%b5" target="_blank">思念</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e7%88%b1%e6%83%85" target="_blank">爱情</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%8a%b1%e5%bf%97" target="_blank">励志</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%93%b2%e7%90%86" target="_blank">哲理</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e9%97%ba%e6%80%a8" target="_blank">闺怨</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%82%bc%e4%ba%a1" target="_blank">悼亡</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%86%99%e4%ba%ba" target="_blank">写人</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e8%80%81%e5%b8%88" target="_blank">老师</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%af%8d%e4%ba%b2" target="_blank">母亲</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%8f%8b%e6%83%85" target="_blank">友情</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%88%98%e4%ba%89" target="_blank">战争</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e8%af%bb%e4%b9%a6" target="_blank">读书</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%83%9c%e6%97%b6" target="_blank">惜时</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%a9%89%e7%ba%a6" target="_blank">婉约</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e8%b1%aa%e6%94%be" target="_blank">豪放</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e8%af%97%e7%bb%8f" target="_blank">诗经</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%b0%91%e8%b0%a3" target="_blank">民谣</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e8%ae%ba%e8%af%ad" target="_blank">论语</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%8f%b2%e8%ae%b0" target="_blank">史记</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e8%80%81%e5%ad%90" target="_blank">老子</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%ba%84%e5%ad%90" target="_blank">庄子</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%ad%9f%e5%ad%90" target="_blank">孟子</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e4%b8%ad%e5%ba%b8" target="_blank">中庸</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e8%8d%80%e5%ad%90" target="_blank">荀子</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%b0%9a%e4%b9%a6" target="_blank">尚书</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%b1%89%e4%b9%a6" target="_blank">汉书</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e8%8a%82%e6%97%a5" target="_blank">节日</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%98%a5%e8%8a%82" target="_blank">春节</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%85%83%e5%ae%b5%e8%8a%82" target="_blank">元宵节</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%af%92%e9%a3%9f%e8%8a%82" target="_blank">寒食节</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%b8%85%e6%98%8e%e8%8a%82" target="_blank">清明节</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e7%ab%af%e5%8d%88%e8%8a%82" target="_blank">端午节</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e4%b8%83%e5%a4%95%e8%8a%82" target="_blank">七夕节</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e4%b8%ad%e7%a7%8b%e8%8a%82" target="_blank">中秋节</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e9%87%8d%e9%98%b3%e8%8a%82" target="_blank">重阳节</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e9%ac%bc%e8%b0%b7%e5%ad%90" target="_blank">鬼谷子</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e8%8f%9c%e6%a0%b9%e8%b0%ad" target="_blank">菜根谭</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e9%9f%a9%e9%9d%9e%e5%ad%90" target="_blank">韩非子</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e7%ba%a2%e6%a5%bc%e6%a2%a6" target="_blank">红楼梦</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%b7%ae%e5%8d%97%e5%ad%90" target="_blank">淮南子</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%90%8d%e8%b4%a4%e9%9b%86" target="_blank">名贤集</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%bf%a7%e5%9b%bd%e5%bf%a7%e6%b0%91" target="_blank">忧国忧民</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%92%8f%e5%8f%b2%e6%80%80%e5%8f%a4" target="_blank">咏史怀古</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e4%b8%89%e5%8d%81%e5%85%ad%e8%ae%a1" target="_blank">三十六计</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e8%b5%84%e6%b2%bb%e9%80%9a%e9%89%b4" target="_blank">资治通鉴</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%a2%9e%e5%b9%bf%e8%b4%a4%e6%96%87" target="_blank">增广贤文</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e4%ba%86%e5%87%a1%e5%9b%9b%e8%ae%ad" target="_blank">了凡四训</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e6%96%87%e5%bf%83%e9%9b%95%e9%be%99" target="_blank">文心雕龙</a>
+        <a href="https://so.gushiwen.cn/mingjus/default.aspx?tstr=%e5%9b%b4%e7%82%89%e5%a4%9c%e8%af%9d" target="_blank">围炉夜话</a>
+        <a href="https://so.gushiwen.cn/mingjus/">更多&gt;&gt;</a>
+    </div>
+</div>
+<div class="sons">
+        <div class="title">
+        <div class="titleleft"></div>
+            作者
+        </div>
+    <div class="cont">
+        <a href="https://so.gushiwen.cn/authorv_b90660e3e492.aspx" target="_blank">李白</a> 
+        <a href="https://so.gushiwen.cn/authorv_85097dd0c645.aspx" target="_blank">白居易</a> 
+        <a href="https://so.gushiwen.cn/authorv_515ea88d1858.aspx" target="_blank">杜甫</a> 
+        <a href="https://so.gushiwen.cn/authorv_3b99a16ff2dd.aspx" target="_blank">苏轼</a> 
+        <a href="https://so.gushiwen.cn/authorv_a7900666497f.aspx" target="_blank">辛弃疾</a> 
+        <a href="https://so.gushiwen.cn/authorv_9cb3b7c0e4a0.aspx" target="_blank">李清照</a> 
+        <a href="https://so.gushiwen.cn/authorv_e3c4e8cf2646.aspx" target="_blank">刘禹锡</a> 
+        <a href="https://so.gushiwen.cn/authorv_52fceee85532.aspx" target="_blank">王维</a> 
+        <a href="https://so.gushiwen.cn/authorv_bc94c92721b8.aspx" target="_blank">李商隐</a> 
+        <a href="https://so.gushiwen.cn/authorv_01611cc80faf.aspx" target="_blank">纳兰性德</a> 
+        <a href="https://so.gushiwen.cn/authorv_727e9dff8850.aspx" target="_blank">杜牧</a> 
+        <a href="https://so.gushiwen.cn/authorv_efd5da0ed1a1.aspx" target="_blank">陆游</a> 
+        <a href="https://so.gushiwen.cn/authorv_07d17f8539d7.aspx" target="_blank">陶渊明</a> 
+        <a href="https://so.gushiwen.cn/authorv_3811e4e1f460.aspx" target="_blank">孟浩然</a> 
+        <a href="https://so.gushiwen.cn/authorv_201a0677dee4.aspx" target="_blank">元稹</a> 
+        <a href="https://so.gushiwen.cn/authorv_05635286bf64.aspx" target="_blank">李煜</a> 
+        <a href="https://so.gushiwen.cn/authorv_0ba13a22799e.aspx" target="_blank">柳宗元</a> 
+        <a href="https://so.gushiwen.cn/authorv_0969d1da1ac1.aspx" target="_blank">岑参</a> 
+        <a href="https://so.gushiwen.cn/authorv_1abe13750637.aspx" target="_blank">韩愈</a> 
+        <a href="https://so.gushiwen.cn/authorv_6485481407d1.aspx" target="_blank">王安石</a> 
+        <a href="https://so.gushiwen.cn/authorv_7ab3b8200774.aspx" target="_blank">欧阳修</a> 
+        <a href="https://so.gushiwen.cn/authorv_236f882d5f10.aspx" target="_blank">齐己</a> 
+        <a href="https://so.gushiwen.cn/authorv_568070f3fde8.aspx" target="_blank">贾岛</a> 
+        <a href="https://so.gushiwen.cn/authorv_00ea9cc9fdbf.aspx" target="_blank">韦应物</a> 
+        <a href="https://so.gushiwen.cn/authorv_f4d9b1ed94dc.aspx" target="_blank">曹操</a> 
+        <a href="https://so.gushiwen.cn/authorv_c367ccd8cd08.aspx" target="_blank">温庭筠</a> 
+        <a href="https://so.gushiwen.cn/authorv_682bdf0fd34e.aspx" target="_blank">柳永</a> 
+        <a href="https://so.gushiwen.cn/authorv_b3e23d54ee99.aspx" target="_blank">刘长卿</a> 
+        <a href="https://so.gushiwen.cn/authorv_74d46d599f15.aspx" target="_blank">李贺</a> 
+        <a href="https://so.gushiwen.cn/authorv_6c695909f577.aspx" target="_blank">曹植</a> 
+        <a href="https://so.gushiwen.cn/authorv_d9343fa5dac7.aspx" target="_blank">王昌龄</a> 
+        <a href="https://so.gushiwen.cn/authorv_05460f6423b0.aspx" target="_blank">张籍</a> 
+        <a href="https://so.gushiwen.cn/authorv_2f7f3273612a.aspx" target="_blank">孟郊</a> 
+        <a href="https://so.gushiwen.cn/authorv_179f3ae96ec4.aspx" target="_blank">皎然</a> 
+        <a href="https://so.gushiwen.cn/authorv_a6acb3e3e0dd.aspx" target="_blank">贯休</a> 
+        <a href="https://so.gushiwen.cn/authorv_ff17134b62ff.aspx" target="_blank">许浑</a> 
+        <a href="https://so.gushiwen.cn/authorv_3de7172b3782.aspx" target="_blank">罗隐</a> 
+        <a href="https://so.gushiwen.cn/authorv_677ad0bb97e7.aspx" target="_blank">杨万里</a> 
+        <a href="https://so.gushiwen.cn/authorv_46b894036ae3.aspx" target="_blank">陆龟蒙</a> 
+        <a href="https://so.gushiwen.cn/authorv_2d4282baeca8.aspx" target="_blank">张祜</a> 
+        <a href="https://so.gushiwen.cn/authorv_ae8538b4e917.aspx" target="_blank">王建</a> 
+        <a href="https://so.gushiwen.cn/authorv_7ce628a673ef.aspx" target="_blank">韦庄</a> 
+        <a href="https://so.gushiwen.cn/authorv_e82a672a1ca9.aspx" target="_blank">诸葛亮</a> 
+        <a href="https://so.gushiwen.cn/authorv_c2c3edb9c1b1.aspx" target="_blank">范仲淹</a> 
+        <a href="https://so.gushiwen.cn/authorv_e6b970da08cd.aspx" target="_blank">王勃</a> 
+        <a href="https://so.gushiwen.cn/authorv_61eacce8c314.aspx" target="_blank">姚合</a> 
+        <a href="https://so.gushiwen.cn/authorv_20e68621f077.aspx" target="_blank">晏殊</a> 
+        <a href="https://so.gushiwen.cn/authorv_9c69482f885f.aspx" target="_blank">屈原</a> 
+        <a href="https://so.gushiwen.cn/authorv_782b7ec7e8ae.aspx" target="_blank">卢纶</a> 
+        <a href="https://so.gushiwen.cn/authorv_3fade50333c4.aspx" target="_blank">杜荀鹤</a> 
+        <a href="https://so.gushiwen.cn/authorv_bc5bd15a8c34.aspx" target="_blank">岳飞</a> 
+        <a href="https://so.gushiwen.cn/authorv_40ce21be572d.aspx" target="_blank">周邦彦</a> 
+        <a href="https://so.gushiwen.cn/authorv_1e6d9d77697a.aspx" target="_blank">晏几道</a> 
+        <a href="https://so.gushiwen.cn/authorv_5219605011ab.aspx" target="_blank">钱起</a> 
+        <a href="https://so.gushiwen.cn/authorv_ce61301b9cf7.aspx" target="_blank">韩偓</a> 
+        <a href="https://so.gushiwen.cn/authorv_ed13dc2f731c.aspx" target="_blank">皮日休</a> 
+        <a href="https://so.gushiwen.cn/authorv_d4825d86f017.aspx" target="_blank">秦观</a> 
+        <a href="https://so.gushiwen.cn/authorv_f57e6789865a.aspx" target="_blank">吴文英</a> 
+        <a href="https://so.gushiwen.cn/authorv_ae228ff17e71.aspx" target="_blank">朱熹</a> 
+        <a href="https://so.gushiwen.cn/authorv_b44661291893.aspx" target="_blank">高适</a> 
+        <a href="https://so.gushiwen.cn/authorv_76758677c136.aspx" target="_blank">方干</a> 
+        <a href="https://so.gushiwen.cn/authorv_d0f71489043c.aspx" target="_blank">马致远</a> 
+        <a href="https://so.gushiwen.cn/authorv_f5e3721e014f.aspx" target="_blank">李峤</a> 
+        <a href="https://so.gushiwen.cn/authorv_3001715a9955.aspx" target="_blank">赵嘏</a> 
+        <a href="https://so.gushiwen.cn/authorv_90bafbe61cf7.aspx" target="_blank">权德舆</a> 
+        <a href="https://so.gushiwen.cn/authorv_e9907dd08d8b.aspx" target="_blank">皇甫冉</a> 
+        <a href="https://so.gushiwen.cn/authorv_1585930d4e76.aspx" target="_blank">左丘明</a> 
+        <a href="https://so.gushiwen.cn/authorv_5452bed2115f.aspx" target="_blank">刘辰翁</a> 
+        <a href="https://so.gushiwen.cn/authorv_5ca283e748ca.aspx" target="_blank">郑谷</a> 
+        <a href="https://so.gushiwen.cn/authorv_252e1b6ee61f.aspx" target="_blank">黄庭坚</a> 
+        <a href="https://so.gushiwen.cn/authorv_389bc382deaf.aspx" target="_blank">贺铸</a> 
+        <a href="https://so.gushiwen.cn/authorv_61b1f8244d24.aspx" target="_blank">赵长卿</a> 
+        <a href="https://so.gushiwen.cn/authorv_0f2fe2d36f61.aspx" target="_blank">张九龄</a> 
+        <a href="https://so.gushiwen.cn/authorv_ffbc39f27901.aspx" target="_blank">卓文君</a> 
+        <a href="https://so.gushiwen.cn/authorv_af3666b92472.aspx" target="_blank">戴叔伦</a> 
+        <a href="https://so.gushiwen.cn/authorv_f01178aaa8c0.aspx" target="_blank">司马迁</a> 
+        <a href="https://so.gushiwen.cn/authorv_b9737a950f1f.aspx" target="_blank">周敦颐</a> 
+        <a href="https://so.gushiwen.cn/authorv_7ef6502f1e96.aspx" target="_blank">文天祥</a> 
+        <a href="https://so.gushiwen.cn/authorv_e47835478657.aspx" target="_blank">张说</a> 
+        <a href="https://so.gushiwen.cn/authorv_c6454212c8da.aspx" target="_blank">张炎</a> 
+        <a href="https://so.gushiwen.cn/authorv_a4c70d8d6e0e.aspx" target="_blank">郑燮</a> 
+        <a href="https://so.gushiwen.cn/authorv_45c7b7ffa770.aspx" target="_blank">程垓</a> 
+        <a href="https://so.gushiwen.cn/authorv_d82bfa645313.aspx" target="_blank">朱敦儒</a> 
+        <a href="https://so.gushiwen.cn/authorv_a4d0598c1f4c.aspx" target="_blank">吴融</a> 
+        <a href="https://so.gushiwen.cn/authorv_273c4b7b5807.aspx" target="_blank">白朴</a> 
+        <a href="https://so.gushiwen.cn/authorv_44ca268d5c43.aspx" target="_blank">刘克庄</a> 
+        <a href="https://so.gushiwen.cn/authorv_82dc795fbcac.aspx" target="_blank">李端</a> 
+        <a href="https://so.gushiwen.cn/authorv_a4f5884125b1.aspx" target="_blank">司空图</a> 
+        <a href="https://so.gushiwen.cn/authorv_d2c43a8ea55a.aspx" target="_blank">顾况</a> 
+        <a href="https://so.gushiwen.cn/authorv_ee60971ad9b4.aspx" target="_blank">张乔</a> 
+        <a href="https://so.gushiwen.cn/authorv_0955ca350ffe.aspx" target="_blank">马戴</a> 
+        <a href="https://so.gushiwen.cn/authorv_06c9f58eb897.aspx" target="_blank">吴潜</a> 
+        <a href="https://so.gushiwen.cn/authorv_83fa70cf5a10.aspx" target="_blank">张孝祥</a> 
+        <a href="https://so.gushiwen.cn/authorv_b8ce6bb93501.aspx" target="_blank">韩翃</a> 
+        <a href="https://so.gushiwen.cn/authorv_4b13c1698a34.aspx" target="_blank">郦道元</a> 
+        <a href="https://so.gushiwen.cn/authorv_14fd383123cc.aspx" target="_blank">陈著</a> 
+        <a href="https://so.gushiwen.cn/authorv_0410a34d2e7c.aspx" target="_blank">宋之问</a> 
+        <a href="https://so.gushiwen.cn/authorv_79e0e9d1f260.aspx" target="_blank">贺知章</a> 
+        <a href="https://so.gushiwen.cn/authors/">更多&gt;&gt;</a>
+    </div>
+</div>
+    <div class="juzioncont">
+        <img style=" float:left; margin:10px; margin-right:0px;" src="./Oldsons_files/erma_guwendao.png" width="80" height="80"><p></p><center style="font-size:18px; margin-top:14px;">扫码关注</center><p></p><p></p><center style="font-size:18px;margin-top:5px;">古文岛主公众号</center><p></p>
+    </div>
+<div class="sons">
+        <div class="title">
+        <div class="titleleft"></div>
+            古籍
+        </div>
+<div class="cont">
+    <a href="https://so.gushiwen.cn/guwen/book_2.aspx" target="_blank">论语</a>
+    <a href="https://so.gushiwen.cn/guwen/book_5.aspx" target="_blank">史记</a>
+    <a href="https://so.gushiwen.cn/guwen/book_6.aspx" target="_blank">周易</a>
+    <a href="https://so.gushiwen.cn/guwen/book_7.aspx" target="_blank">易传</a>
+    <a href="https://so.gushiwen.cn/guwen/book_11.aspx" target="_blank">孟子</a>
+    <a href="https://so.gushiwen.cn/guwen/book_19.aspx" target="_blank">左传</a>
+    <a href="https://so.gushiwen.cn/guwen/book_20.aspx" target="_blank">大学</a>
+    <a href="https://so.gushiwen.cn/guwen/book_21.aspx" target="_blank">中庸</a>
+    <a href="https://so.gushiwen.cn/guwen/book_22.aspx" target="_blank">尚书</a>
+    <a href="https://so.gushiwen.cn/guwen/book_23.aspx" target="_blank">礼记</a>
+    <a href="https://so.gushiwen.cn/guwen/book_24.aspx" target="_blank">周礼</a>
+    <a href="https://so.gushiwen.cn/guwen/book_25.aspx" target="_blank">仪礼</a>
+    <a href="https://so.gushiwen.cn/guwen/book_26.aspx" target="_blank">庄子</a>
+    <a href="https://so.gushiwen.cn/guwen/book_28.aspx" target="_blank">老子</a>
+    <a href="https://so.gushiwen.cn/guwen/book_11.aspx" target="_blank">孟子</a>
+    <a href="https://so.gushiwen.cn/guwen/book_29.aspx" target="_blank">墨子</a>
+    <a href="https://so.gushiwen.cn/guwen/book_30.aspx" target="_blank">荀子</a>
+    <a href="https://so.gushiwen.cn/guwen/book_32.aspx" target="_blank">列子</a>
+    <a href="https://so.gushiwen.cn/guwen/book_34.aspx" target="_blank">管子</a>
+    <a href="https://so.gushiwen.cn/guwen/book_36.aspx" target="_blank">吴子</a>
+    <a href="https://so.gushiwen.cn/guwen/book_39.aspx" target="_blank">素书</a>
+    <a href="https://so.gushiwen.cn/guwen/book_45.aspx" target="_blank">孝经</a>
+    <a href="https://so.gushiwen.cn/guwen/book_55.aspx" target="_blank">将苑</a>
+    <a href="https://so.gushiwen.cn/guwen/book_56.aspx" target="_blank">六韬</a>
+    <a href="https://so.gushiwen.cn/guwen/book_57.aspx" target="_blank">反经</a>
+    <a href="https://so.gushiwen.cn/guwen/book_71.aspx" target="_blank">冰鉴</a>
+    <a href="https://so.gushiwen.cn/guwen/book_74.aspx" target="_blank">论衡</a>
+    <a href="https://so.gushiwen.cn/guwen/book_78.aspx" target="_blank">智囊</a>
+    <a href="https://so.gushiwen.cn/guwen/book_40.aspx" target="_blank">汉书</a>
+    <a href="https://so.gushiwen.cn/guwen/">更多&gt;&gt;</a>
+</div>
+      </div>
+    </div>
+
+</div>
+
+<div class="main4" style="display:block;">
+<div style="float:left; margin-top:5px; margin-left:105px; color:#676767;">
+    © 2022 <a href="https://www.gushiwen.cn/">古诗文网</a> | <a href="https://so.gushiwen.cn/mianze.aspx" target="_blank" rel="nofollow">免责声明</a> | <a href="https://so.gushiwen.cn/jiucuo.aspx" target="_blank" rel="nofollow">意见箱</a> | <a href="https://so.gushiwen.cn/jiucuo.aspx?u=" target="_blank" rel="nofollow">纠错</a> | <a href="https://so.gushiwen.cn/jiucuo.aspx?key=shoulu" target="_blank" rel="nofollow">申请收录</a> | 邮件：gushiwen@laiyo.com | <a href="http://beian.miit.gov.cn/" target="_blank">渝ICP备15011639号-3</a> | <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50010602501990" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="./Oldsons_files/ghs.png" style="float:left;" alt="备" width="19" height="19">渝公网安备 50010602501990号</a>
+</div>
+</div>
+
+<script type="text/javascript">
+    window.onload = function () {
+        setIframeHeight(document.getElementById('external-frame'));
+    };
+        </script>
+
+<script defer="defer" src="./Oldsons_files/skinwww20220618.js.下载" type="text/javascript"></script>
+
+<div class="aihuaci" style="display: none;"><div class="aihuaciheader"><p></p><button id="aihuacihead">&nbsp;</button><span></span><button id="aihuaciclose"></button></div><div class="aihuacimain"><div class="aihuacimainloadbox"><img src="./Oldsons_files/loading.gif" width="32" height="32"></div><iframe frameborder="0" id="aihuaciiframe" name="aihuaciiframe" src="./Oldsons_files/saved_resource.html"></iframe><iframe frameborder="0" id="aihuaciadvert" name="aihuaciadvert" style="height: 0px; width: 100%;" src="./Oldsons_files/saved_resource(1).html"></iframe></div><div class="aihuacibottom"><p></p><div><button id="aihuacibottombtn"></button></div><a href="https://www.gushiwen.cn/" target="_blank">古诗文网</a><span></span></div><button class="aihuacisidebar" style="width: 5px; height: 100%; top: 0px; left: -2px; background: black; cursor: col-resize;"></button><button class="aihuacisidebar" style="width: 100%; height: 5px; top: -2px; left: 0px; background: black; cursor: row-resize;"></button><button class="aihuacisidebar" style="width: 5px; height: 100%; top: 0px; right: -2px; background: black; cursor: col-resize;"></button><button class="aihuacisidebar" style="width: 100%; height: 5px; left: 0px; bottom: -2px; background: black; cursor: row-resize;"></button><button class="aihuacisidepart" style="top: -2px; left: -2px; cursor: nw-resize;"></button><button class="aihuacisidepart" style="top: -2px; right: -2px; cursor: ne-resize;"></button><button class="aihuacisidepart" style="left: -2px; bottom: -2px; cursor: sw-resize;"></button><button class="aihuacisidepart" style="right: -2px; bottom: -2px; cursor: se-resize;"></button></div><div class="blankmask" style="display: none;"></div><form target="aihuaciiframe" method="post" action="https://www.gushiwen.cn/dict/fancha.aspx" accept-charset="utf-8" class="aihuacitollbar" style="width: 40px; display: none;"><input type="hidden" id="aihuacikeyword" name="z"><input type="hidden" name="url" value="www.gushiwen.cn/"><ul><li toolid="10" params="320,330,&amp;#37322;&amp;#20041;" style="background-position: 0px 0px;"><img src="https://www.gushiwen.cn/" title="释义"><button type="button">释义</button></li></ul><span></span></form></body></html>
