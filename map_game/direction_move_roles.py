@@ -5,32 +5,61 @@
 
 import pygame
 import time
+import assets_config
+from assets_config import *
 
+global screen_width, screen_height
+global room_m, room_n, room_size
 pygame.init()
-img = pygame.display.set_mode((512, 512))
 pygame.display.set_caption("Demo for bin4xin")
-img.fill((111, 111, 111))
-x = y = 256
-pygame.draw.circle(img, (173, 255, 47), (x, y), 8)
-pygame.display.update()
-"""@link {https://blog.csdn.net/weixin_43201103/article/details/101623587}"""
+x = y = 5
+# 设置小球的位置
+# img = pygame.display.set_mode((512, 512))
+# img.fill((111, 111, 111))
+# pygame.draw.circle(img, (173, 255, 47), (x, y), 8)
+# pygame.display.update()
+"""
+move role by keyboard. @link {https://blog.csdn.net/weixin_43201103/article/details/101623587}
+pygame.key docs @link {https://www.pygame.org/docs/ref/key.html?highlight=k_right}
+"""
 while True:
-    img = pygame.display.set_mode((512, 512))
-    img.fill((111, 111, 111))
-    pygame.draw.circle(img, (173, 255, 47), (x, y), 8)
+    _init = pygame.display.set_mode((screen_width, screen_height))
+    # 初始化地图大小为
+    _init.fill(assets_config.map_color)
+    # 颜色
+    pygame.draw.circle(_init, assets_config.roles_color, (x, y), 8)
+    # 画个圆，参数分别是画布，颜色，坐标，半径
+    # TODO: 在画布需要再进行迷宫墙的绘制。
+    from map_init import draw_room, creat_map, creat_migong
+    clock = pygame.time.Clock()
+    fps = 20
+    r_list = creat_map(room_m, room_n)
+    begin_point = [0, 0]
+    begin_room = r_list[0][0]
+    creat_migong(r_list, begin_room)
+    for i in range(room_m):
+        for j in range(room_n):
+            begin_point[0] = 25 + i * room_size
+            begin_point[1] = 25 + j * room_size
+            r_color = Blue
+            draw_room(_init, begin_point, r_list[i][j].wells, room_size, r_color)
+    draw_room(_init, [25, 25], [0, 0, 0, 1], 5, White)
+    draw_room(_init, [25 + (room_m - 1) * 5, 25 + (room_n - 1) * room_size], [0, 1, 0, 0], room_size, White)
     pygame.display.update()
-    str = pygame.key.get_pressed()
-    if str[pygame.K_RIGHT]:
+    inputKeycode = pygame.key.get_pressed()
+    if inputKeycode[pygame.K_RIGHT]:
         x += 5
-    elif str[pygame.K_DOWN]:
+    elif inputKeycode[pygame.K_DOWN]:
         y += 5
-    elif str[pygame.K_LEFT]:
+    elif inputKeycode[pygame.K_LEFT]:
         x -= 5
-    elif str[pygame.K_UP]:
+    elif inputKeycode[pygame.K_UP]:
         y -= 5
-    elif str[pygame.K_ESCAPE]:
+    elif inputKeycode[pygame.K_ESCAPE] or inputKeycode[pygame.K_q]:
+        # quit game by type in Q or ESC.
         break
     time.sleep(0.05)
+
 pygame.quit()
 # def main():
 #     stdscr = curses.initscr()

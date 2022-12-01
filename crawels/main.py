@@ -26,7 +26,6 @@ def requestUri(uri):
     response = requests.get(uri, headers=headers, cookies=Cookies)
     response.encoding = "utf-8"
     if response.status_code == 200:
-        print("Get OJBK.")
         parseContentByLXML(response.text)
     else:
         raise RuqestError("Get Error, Plz check you uri or change header for your robots.")
@@ -49,11 +48,16 @@ def parseContentByLXML(html):
         # if filter is not None:
         #######
         sonsTitle = div.xpath('.//p[1]//b/text()')
+        # 古詩標題
         sonsAuthor = div.xpath('.//p[2]//a/text()')
+        # 古詩作者
         sonsContent = div.xpath('.//div[@class="contson"]//text()')
+        # 古詩内容
         sonsTag = div.xpath('.//div[@class="tag"]//a/text()')
+        # 古詩標簽
         print(sonsTitle, sonsAuthor, sonsContent, sonsTag)
-        ####### TODO
+        ####### TODO MARK 會存在一些可以找到標簽的元素，但是裏面沒有内容，所以現在會顯示為list的空。
+        """https://github.com/Bin4xin/Turbo-succotash/blob/main/crawels/main.py"""
         # else:
         #     divs.remove(div)
         #     #print()
