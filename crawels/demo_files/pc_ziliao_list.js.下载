@@ -1,0 +1,112 @@
+var indexInit={
+    init:function () {
+        this.changeMapMark();
+        this.changeMap();
+        this.hideAll();
+        this.firstMenuChange();
+        this.secondMenuChange();
+    },
+    //一级菜单切换
+    firstMenuChange:function(){
+        $(".list-nav>li").on("click",function () {
+            $(this).addClass('cur').siblings().removeClass('cur')
+            $(".list-content>div").eq($(this).attr("data-index")).show().siblings().hide();
+        })
+    },
+    //改变地图
+    changeMap:function(){
+        $(".map-data li").on('click',function () {
+            $(this).addClass('cur').siblings().removeClass('cur')
+            $(".map-list>div").eq($(this).attr("data-index")).show().siblings().hide();
+        })
+    },
+    //显示隐藏全部标记
+    hideAll:function(){
+        $(".btn-according div").on("click",function () {
+            var $this=$(this);
+            if($this.hasClass('btn-hide-all')){
+                if($this.hasClass('active')){
+                    $this.removeClass('active');
+                    $this.text("显示全部");
+                    $('.data-change i').removeClass('choosed');
+                    $('.map div').hide();
+                    $(".map .map-grid").show();
+                }else{
+                    $this.addClass('active');
+                    $this.text("隐藏全部");
+                    $('.data-change i').addClass('choosed');
+                    $('.map div').show();
+                }
+            }
+            /**/
+           if($this.hasClass('btn-show-grid')){
+                if($this.hasClass('active')){
+                    $this.removeClass('active');
+                    $this.text("显示网格");
+                    $(".map .map-grid").hide();
+                }else{
+                    $this.addClass('active');
+                    $this.text("隐藏网格");
+                    $(".map .map-grid").show();
+                }
+            }
+            /**/
+        })
+    },
+    //改变标记
+    changeMapMark:function () {
+        $(".data-change p").on("click",function () {
+            var $this=$(this);
+            var mark='';
+            if($this.hasClass('high-goods')){
+                mark='high-goods-mask';
+            }else if($this.hasClass('mid-goods')){
+                mark='mid-goods-mask';
+            }else if($this.hasClass('high-carrier')){
+                mark='high-carrier-mask';
+            }else if($this.hasClass('mid-carrier')){
+                mark='mid-carrier-mask';
+            }else{
+                return
+            }
+            if($this.children('i').hasClass('choosed')){
+                $this.children('i').removeClass('choosed')
+                $('.'+mark).hide();
+            }else{
+                $this.children('i').addClass('choosed')
+                $('.'+mark).show();
+            }
+            //得到有几个选中的
+            var len=$this.parent().children('p').length;
+            var arr=$this.parent().children('p');
+            var count=0;
+            for(var i=0;i<len;i++){
+                if($(arr[i]).children('i').hasClass('choosed')){
+                    ++count
+                }
+            }
+            if(count<=0){
+               $('.btn-hide-all').removeClass('active');
+                $('.btn-hide-all').text("显示全部");
+            }else{
+                $('.btn-hide-all').addClass('active');
+                $('.btn-hide-all').text("隐藏全部");
+            }
+        })
+    },
+    //二级菜单切换
+    secondMenuChange:function () {
+        $('.second-menu-nav li').on("click",function () {
+            var listName=$(this).parent()[0].className.split(' ')[1].split("-")[0]+"-list"
+            // console.log(listName);
+            $(this).addClass('cur').siblings().removeClass('cur')
+            var offset=$('.'+listName+' h3').eq($(this).attr('data-index')).offset().top;
+            $('html,body').animate({scrollTop: offset}, 600, 'swing');
+        })
+    }
+}
+indexInit.init();
+// $('html,body').on("scroll",function () {
+//     // console.log("222");
+// })
+/* #t6Hl8#444506C379E293C7F5A02509952BE1C9 *//* #t6Hl8#12770654BDEC383F89262D02AB3ADD70 */

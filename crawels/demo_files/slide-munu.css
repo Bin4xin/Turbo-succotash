@@ -1,0 +1,77 @@
+/*slide-munu*/
+.slide-munu{display:none;width:200px;height:240px;position: fixed;top: 35%;right: 0;margin-top: -160px;z-index: 99;background: url(//game.gtimg.cn/images/gp/public/slide-munu.png) no-repeat 0 0; /*transition: right .5s ease-in-out;*/}
+.slide-munu-1{height:426px;background: url(//game.gtimg.cn/images/gp/web201908/slide-munu2.png) no-repeat 0 0;box-sizing: border-box;
+    padding-top: 180px;}
+.slide-munu .code{display: block;margin: 3px auto 40px 51px;}
+.slide-munu .slide_munu_txt{text-align: center;font-size:20px;line-height:28px;color:#fff;}
+.slide-munu .slide_munu_txt-1{color:#5b5e63;}
+.slide-munu .slide_munu_txt2{padding-top: 20px;color:#ffffff;}
+.slide-munu .slide_munu_txt span{color:#feb012;}
+.slide-munu .slide_btn{display:block;width:160px;height:50px;overflow:hidden;margin:10px auto 0;text-indent:-9999em;}
+/*.slide_popecode{position:relative;display:none;}*/
+.slide-munu .slide-btn-ecode{margin-top:30px;}
+.slide-btn-ecode:hover .slide_popecode{display:block;}
+.slide-munu .red:before{
+    content: '';
+    border-radius: 50%;
+    padding: 4px;
+    position: absolute;
+    left: 28px;
+    top: 268px;
+    background: red;
+}
+.slide-btn-gzh, .slide-btn-wb, .slide-btn-hpyd {
+    width: 136px;
+    height: 41px;
+    text-indent: -9999px;
+    display: block;
+    margin: 0 auto 3px 43px;
+}
+.slide-btn-gzh {
+    background: url(//game.gtimg.cn/images/gp/web201908/gzh-btn.png) no-repeat center/cover;
+}
+.slide-btn-hpyd {
+    background: url(//game.gtimg.cn/images/gp/web201908/hpyd-btn.png) no-repeat center/cover;
+}
+.slide-btn-wb {
+    background: url(//game.gtimg.cn/images/gp/web201908/wb-btn.png) no-repeat center/cover;
+}
+.slide_popecode{width:137px;height:0;overflow:hidden;background:url(//game.gtimg.cn/images/gp/web201908/slide-munu-gzh.png) no-repeat 0 0;
+    margin: 0 auto 3px 42px;transition: .2s}
+.slide_popecode2 {
+    background:url(//game.gtimg.cn/images/gp/web201908/slide-munu-hpyd.png) no-repeat 0 0;
+}
+.slide_popecode .code2{display:block;
+    margin: 10px 0 0 9px;}
+.slide-btn-gzh:hover + .slide_popecode,
+.slide-btn-hpyd:hover + .slide_popecode2 {
+    height:169px
+}
+.opacity2{display:block;animation: 1s opacity2 0 normal; -webkit-animation: 1s opacity2 0 normal;}
+@keyframes opacity2{0%{opacity:0} 50%{opacity:.8;}100%{opacity:1;}}
+@-webkit-keyframes opacity2{0%{opacity:0}50%{opacity:.8;}100%{opacity:1;}}
+.opacity1{animation: 1s opacity1 0 normal; -webkit-animation: 1s opacity1 0 normal;}
+@keyframes opacity2{0%{opacity:1} 50%{opacity:.6;}100%{opacity:0;}}
+@-webkit-keyframes opacity2{0%{opacity:1}50%{opacity:.6;}100%{opacity:0;}}
+.opacity3{right: -200px;}
+.back {
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 82px;
+    background: url(//game.gtimg.cn/images/gp/web201908/sq.png) no-repeat center;
+    top: 171px;
+    left: 9px;
+    text-indent: -9999px;
+}
+.back.on {
+    background: url(//game.gtimg.cn/images/gp/web201908/zk.png) no-repeat center;
+    left: -26px;
+}
+.slide-munu.on {
+    display: none;
+}
+/*.foot_left {
+    margin: 5px 0 0 -15px !important;
+}*/
+/* #t6Hl8#B0D7FEB0D8622AFFCDBB735DA550F327 */

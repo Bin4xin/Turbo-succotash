@@ -1,0 +1,17 @@
+ //头部js 
+$("#tipsPlayer li").mouseover(function () {
+	var idx = $(this).index();
+	$("#tipsPlayer li").removeClass("on").eq(idx).addClass("on")
+	$("#tipsPlayer p").hide().eq(idx).show();
+});
+
+$(window).scroll(function() { //整体页面滚动		
+	 if ($(this).scrollTop() > 630) { //整体页面滚动大于100之后				
+	 $('.slide-munu').addClass('opacity2');
+	 $('.slide-munu').removeClass('opacity1');
+	 } else {				
+	 $('.slide-munu').removeClass('opacity2');
+	 $('.slide-munu').addClass('opacity1');
+	 }			
+});
+

@@ -1,0 +1,65 @@
+/**
+ * Created by Administrator on 2019/5/24 0024.
+ */
+var resultData;
+var _info = null;
+//渲染二级菜单
+function tab_str(tn, ss, id){
+    var str = '';
+    var $labContainer = $("#lab-conainer"+id);
+    $labContainer.html('');
+    for(var i = 0; i< tn.length; i++){
+        var name = tn[i].lx_b5[0].mc_94;
+        if(i == 0){
+            str += '<li class="item cur" data-index="'+i+'" onclick="PTTSendClick(\'btn\',\'point' + tn[i].lx_b5[0]['dx_2a'][0]['wqid_75'] + '\',\'' + name + '\')">'+ name +'</li>'
+        }
+        else str += '<li class="item" data-index="'+i+'" onclick="PTTSendClick(\'btn\',\'point' + tn[i].lx_b5[0]['dx_2a'][0]['wqid_75'] + '\',\'' + name + '\')">'+ name +'</li>'
+    }
+    $labContainer.html(str);
+    // 二级菜单点击
+    $('.second-menu-nav .item').on('click',function(){
+        var listName=$(this).parent()[0].className.split(' ')[1].split("-")[0]+"-list"
+        // console.log(listName);
+        $(this).addClass('cur').siblings().removeClass('cur')
+        var offset=$('.'+listName+' h3').eq($(this).attr('data-index')).offset().top;
+        $('html,body').animate({scrollTop: offset}, 600, 'swing');
+       /* var $body = $('html, body');
+        var $self = $(this);
+        var idx = $self.index();
+        var $linkId = $('#'+ss+idx);
+        var curtState = $self.attr('data-curt');
+        var offsetTop = $linkId.offset().top;
+        if (curtState == 1) return false;
+        $self.addClass('curt')
+            .attr('data-curt', 1)
+            .siblings()
+            .removeClass('curt')
+            .attr('data-curt', 0);
+        $body.animate({scrollTop: offsetTop}, 600, 'swing');*/
+    });
+}
+//渲染详细内容
+function info_str(infos, key, id){
+    var strTitle = '';
+    var strCont = '';
+    var infoData = resultData[infos];
+    $("#section-container"+id).html('');
+    for(var i = 0; i< infoData.length; i++){
+        strTitle = '<h3 class="detail-name">'+ infoData[i].lx_b5[0].mc_94+'</h3><ul class="clear '+infos+i+'"></ul>';
+        strCont = '';
+        for(var j = 0; j< infoData[i].lx_b5[0].dx_2a.length; j++){
+            var param = 'id='+infoData[i].lx_b5[0].dx_2a[j].wqid_75;
+            var linkUrl = '/cp/a20190522gamedata/pc_comm_detail.shtml?'+param;
+            // var name = infoData[i].lx_b5[0].dx_2a[j].mc_94.split("（")[0].split("(")[0];
+            var name = infoData[i].lx_b5[0].dx_2a[j].mc_94;
+            // console.log(name);
+            var imgUrl = infoData[i].lx_b5[0].dx_2a[j].tp_93;
+            strCont += ('<li><a href="'+linkUrl+'" title="'+name+'" onclick="PTTSendClick(\'link\',\'' + key+infoData[i].lx_b5[0].dx_2a[j].wqid_75 + '\',\'' + name + '\')"><img src="'+imgUrl+'"><p>'+name+'</p></a></li>');
+        }
+        $('#section-container'+id).append(strTitle);
+        $('.'+infos+i+'').append(strCont);
+    }
+}
+
+
+/* #t6Hl8#189B5EAA0B217C78705CC36374BCFA24 *//* #t6Hl8#428DA59AF734506F43B85A83036D84DA */

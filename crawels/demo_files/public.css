@@ -1,0 +1,1159 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font: 12px/1.5 '\5FAE\8F6F\96C5\9ED1';
+    padding-top: 42px;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.article-box a {
+    text-decoration: underline;
+}
+
+.article-box a:hover {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+a:focus {
+    outline-style: none;
+    -moz-outline-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+fieldset,
+img,
+abbr,
+acronym {
+    border: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.top-clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.top-clearfix {
+    *zoom: 1;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+    font-size: 0;
+    text-indent: -999em;
+}
+
+#ost_box,
+#footer_ied,
+#jdqs_container {
+    min-width: 1200px;
+    width: 100%;
+}
+
+.footer-box {
+    margin-top: -200px;
+}
+
+/* top_nav css */
+.top-box {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.top-title {
+    float: left;
+    position: relative;
+}
+.new_version{
+    width: 69px;
+    height: 19px;
+    display: block;
+    position: absolute;
+    font-size: 0;
+    text-indent: -999;
+    color: transparent;
+    background: url(//game.gtimg.cn/images/gp/web201908/new_version.png)no-repeat center/cover;
+    top: 35px;
+    right: 12px;
+    z-index: 4;
+}
+.top-nav-1 {
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    margin-left: 10px;
+}
+
+.top-title .tag {
+    margin-top: 4px;
+    margin-right: 20px;
+    z-index: 9;
+    float: left
+}
+
+.top-title h1 {
+    font-size: 24px;
+    color: #ffb400;
+    line-height: 36px;
+    font-weight: bold;
+    float: left;
+    margin-top: 24px;
+}
+
+.top-title h1 span {
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.top-nav {
+    width: 100%;
+    min-width: 1200px;
+    height: 131px;
+    background: url(//game.gtimg.cn/images/gp/web201908/bg-nav.png) no-repeat center top;
+    position: absolute;
+    top: 42px;
+    z-index: 9
+}
+
+.top-nav-1 a {
+    position: relative;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    width: 102px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top
+}
+.top-nav-1 a:last-child {
+    color: #ffba00;
+    text-decoration: underline;
+}
+.top-nav-1 a:hover {
+    color: #ffb400;
+    /* background: url(//game.gtimg.cn/images/gp/public/spr_icon.png) no-repeat 0 -50px;*/
+}
+
+.top-nav-1 a:hover span {
+    color: #ffb400
+}
+
+.top-nav-1 a>span {
+    font-size: 10px;
+    color: #515151;
+    font-weight: 600;
+    display: block;
+}
+
+.top-nav-1 a i {
+    display: block;
+    width: 1px;
+    height: 20px;
+    font-size: 1px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 200;
+}
+
+.top-nav-1 a:hover .tips-player {
+    display: block;
+}
+
+.top-clearfix:hover .top-nav-2 {
+    height: 400px;
+}
+
+.top-nav .top-nav-btn {
+    width: 126px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: -120px;
+}
+
+.top-nav .top-nav-btn .login-head-btn {
+    background: url(//game.gtimg.cn/images/gp/web201908/dia-login-head.png) no-repeat center/cover;
+    width: 46px;
+    height: 45px;
+    font-size: 0;
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    margin-left: -23px;
+}
+.top-nav .top-nav-btn p {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 14px;
+}
+.top-nav .top-nav-btn p a {
+    color: #ffba00;
+}
+.top-nav .logined .login-head {
+    background: url(//game.gtimg.cn/images/gp/web201908/dia-login-head.png) no-repeat center/cover;
+    width: 46px;
+    height: 45px;
+    font-size: 0;
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    margin-left: -23px;
+}
+.top-nav .logined p {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 14px;
+}
+.top-nav .logined p span {
+    width: 64px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;/*超出部分隐藏*/
+    text-overflow:ellipsis;/* 超出部分显示省略号 */
+    white-space: nowrap;/*规定段落中的文本不进行换行 */
+}
+.top-nav .logined a {
+    color: #ffba00;
+    display: inline-block;
+}
+/* dia-login S */
+.dia-login {
+    background: url(//game.gtimg.cn/images/gp/web201908/dia-login-bg.png) no-repeat center/cover;
+    width: 643px;
+    height: 327px;
+    outline: none;
+}
+
+.dia-login p {
+    width: 643px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 24px;
+    color: #fffefe;
+    font-weight: bold;
+}
+
+.dia-login .qqland {
+    background: url(//game.gtimg.cn/images/gp/web201908/dia-login-qq.png) no-repeat center/cover;
+    width: 130px;
+    height: 164px;
+    position: absolute;
+    top: 90px;
+    left: 145px;
+    font-size: 0;
+}
+
+.dia-login .wxland {
+    background: url(//game.gtimg.cn/images/gp/web201908/dia-login-wx.png) no-repeat center/cover;
+    width: 130px;
+    height: 163px;
+    position: absolute;
+    top: 90px;
+    right: 145px;
+    font-size: 0;
+}
+
+.close-btn {
+    background: url(//game.gtimg.cn/images/gp/web201908/dia-login-close.png) no-repeat center/cover;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 0;
+}
+
+/* dia-login E */
+.top-nav-2 {
+    width: 100%;
+    height: 0px;
+    background: rgba(0, 0, 0, .5);
+    transition: height .3s ease;
+    overflow: hidden;
+    position: absolute;
+}
+
+.top-page_nav {
+    width: 1100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 115px;
+}
+
+.top-page_nav li {
+    float: left;
+    width: 102px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.top-page_nav li a {
+    color: #fff;
+}
+
+.nav_tomain{display: none!important;}
+
+.top-page_nav .ctb_1 {
+    margin-left: 180px;
+}
+
+.top-page_nav .ctb_3 {
+    margin-left: 4px;
+}
+
+.top-page_nav .ctb_4 {
+    margin-left: 3px;
+}
+
+.top-page_nav .ctb_5 {
+    margin-left: 4px;
+}
+
+.top-page_nav .ctb_6 {
+    margin-left: 3px;
+}
+
+.top-page_nav li a:hover {
+    color: #ffb400;
+}
+
+.top-page_nav .ctb_6 .top-newadd1 li {
+    position: relative;
+}
+
+.tips-img-1,
+.tips-img-2,
+.tips-img-3,
+.tips-img-4,
+.tips-img-5 {
+    padding: 6px;
+    left: -158px;
+    position: absolute;
+    background: #fff;
+    line-height: 0;
+    display: none;
+    width: 132px
+}
+
+.top-page_nav .ctb_6 .top-newadd1 li img {
+    width: 100%;
+}
+
+.top-page_nav .ctb_6 .top-newadd1 i.ips-arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid #fff;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 57px;
+    right: -19px;
+}
+
+.top-page_nav .ctb_6 .top-newadd1 .tips-img-1 i.ips-arrow {
+    top: 26px
+}
+
+.top-page_nav .ctb_6 .top-newadd1 .tips-img-1 {
+    top: -15px;
+}
+
+.top-page_nav .ctb_6 .top-newadd1 .tips-img-2 i.ips-arrow {
+    top: 50px
+}
+
+.top-page_nav .ctb_6 .top-newadd1 .tips-img-2 {
+    top: -40px;
+}
+
+.top-page_nav .ctb_6 .top-newadd1 .tips-img-3 i.ips-arrow {
+    top: 58px
+}
+
+.top-page_nav .ctb_6 .top-newadd1 .tips-img-3 {
+    top: -48px;
+}
+
+.top-page_nav .ctb_6 .top-newadd1 .tips-img-4 i.ips-arrow {
+    top: 55px
+}
+
+.top-page_nav .ctb_6 .top-newadd1 .tips-img-4 {
+    top: -45px;
+}
+
+.top-newadd1 .tips-img-5 i.ips-arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid #fff;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 57px;
+    right: -19px;
+}
+
+.top-newadd1 .tips-img-5 {
+    top: 35px !important;
+    left: 286px !important;
+}
+
+.top-page_nav .ctb_6 .top-newadd1 li:hover .tips-img-1 {
+    display: block;
+}
+
+.top-page_nav .ctb_6 .top-newadd1 li:hover .tips-img-2 {
+    display: block;
+}
+
+.top-page_nav .ctb_6 .top-newadd1 li:hover .tips-img-3 {
+    display: block;
+}
+
+.top-page_nav .ctb_6 .top-newadd1 li:hover .tips-img-4 {
+    display: block;
+}
+
+.top-newadd1 .hov:hover .tips-img-5 {
+    display: block;
+}
+
+.top-newadd1 .hov .tips-img-5 img {
+    width: 100%;
+}
+
+.top-newadd1 li.hot,
+.top-newadd1 li.new {
+    position: relative;
+}
+
+.top-newadd1 li.hot::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url(//game.gtimg.cn/images/gp/web201908/hot.png) no-repeat center;
+    background-size: 100%;
+    left: 3px;
+    top: 12px;
+}
+
+.top-newadd1 li.new::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url(//game.gtimg.cn/images/gp/web201908/now.png) no-repeat center;
+    background-size: 100%;
+    left: 3px;
+    top: 12px;
+}
+
+.top-newadd1 li.hot3::before {
+    left: -3px;
+    top: 12px;
+}
+
+.top-newadd1 li.hot2::before {
+    left: -12px;
+    top: 12px;
+}
+
+.top-newadd1 li.hot1::before {
+    left: 10px;
+    top: 12px;
+}
+
+
+/* tips-player */
+/* .tips-player{width:303px;overflow: hidden;top: 100px;right:0;position:absolute;height: 150px;display: none;z-index: 99;}
+.tips-player ul{float: right; padding:10px 36px;background: #000;}
+.tips-player li{overflow: hidden;height: 25px;line-height: 25px;font-size: 14px;color: #fff;cursor: pointer}
+.tips-player .top-on{color: #fead2c;}
+.tips-img-1{display: block}
+.ctr{width: 1200px;position: relative;margin: 0 auto} */
+
+/*listpage-head*/
+.listpage-head .listpage-head-main {
+    margin: 170px 0 0 80px;
+}
+
+.listpage-head .local {
+    padding-top: 17px;
+    color: #b8b8b8;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.listpage-head .local a {
+    color: #b8b8b8;
+    text-decoration: underline;
+}
+
+.listpage-head .local a:hover {
+    color: #e8a026;
+}
+
+/* footer css */
+.footer-top {
+    height: 812px;
+    background: url(//game.gtimg.cn/images/gp/public/footer_codebg.jpg) no-repeat center 0;
+}
+
+.foot-code {
+    width: 1050px;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.foot-code ul {
+    width: 1200px;
+    display: block;
+}
+
+.foot-code li {
+    width: 192px;
+    float: left;
+    border: 1px solid #6b7998;
+}
+
+.foot-code li img {
+    width: 174px;
+    height: 174px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.foot-code li p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 70px;
+    background: #191c27;
+    text-align: center;
+}
+
+.foot-code li.first {
+    margin-right: 640px;
+    margin-top: 67px;
+}
+
+.foot-code li.sec {
+    margin-top: 67px;
+}
+
+.foot-code li.third {
+    margin-right: 640px;
+    margin-top: 45px;
+}
+
+.foot-code li.last {
+    margin-top: 45px;
+}
+
+/*foot-cpright*/
+.foot {
+    background: #000 !important;
+    margin: 0 20px;
+    color: #ccc;
+    width: 100%;
+    margin: 0 auto
+}
+
+.foot-dark {
+    background: #000;
+}
+
+.foot-cpright {
+    padding: 15px 0
+}
+
+.foot-cpright:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.foot-sprt {
+    margin: 0 2px;
+}
+
+.foot-logos {
+    float: left;
+    display: inline;
+    margin-top: 20px;
+}
+
+.foot-logos-game {
+    float: left;
+    width: 170px;
+    height: 35px;
+    text-indent: -999em;
+    overflow: hidden;
+    margin: 10px 0 0 10px;
+    background: url(//ossweb-img.qq.com/images/sy/template2014/foot-light.png);
+}
+
+.foot-dark .foot-logos-game {
+    background: url(//ossweb-img.qq.com/images/sy/template2014/foot-dark.png);
+}
+
+.foot-logos-company {
+    float: left;
+    overflow: hidden;
+    margin: 10px 0 0 28px;
+}
+
+.browser-tips {
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+    padding: 3px 0;
+    background: #444;
+    text-align: center;
+    font-weight: bold;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+}
+
+/*foot-info*/
+.foot-links {
+    color: #fff;
+    font-size: 12px
+}
+
+.foot-info {
+    padding: 50px 0;
+    letter-spacing: -4px;
+    word-spacing: -4px;
+    font-size: 0;
+}
+
+.foot-info li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    font-size: 14px
+}
+
+.foot-info .gzweixin {
+    width: 255px;
+    padding-right: 60px
+}
+
+.foot-info .tips {
+    width: 325px;
+    padding-right: 60px
+}
+
+.foot-info .coop {
+    width: 260px;
+}
+
+.foot-info .coop-list li {
+    display: block;
+}
+
+.foot-links {
+    display: inline;
+    float: right;
+    width: 700px;
+}
+
+.foot-links a {
+    color: #fff
+}
+
+.foot-logo {
+    width: 770px;
+    margin: 0 auto;
+    display: block;
+    padding: 20px 0 50px;
+}
+
+.foot-logo .middle {
+    margin: 0 70px;
+}
+
+.sprite {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url(//game.gtimg.cn/images/gp/web20190423/spr_icon.png);
+}
+
+.icon-androide {
+    width: 17px;
+    height: 19px;
+    background-position: -656px -307px;
+    vertical-align: middle;
+}
+
+.icon-iphone {
+    width: 18px;
+    height: 20px;
+    background-position: -686px -304px;
+    vertical-align: middle;
+}
+
+.icon-xbxly {
+    width: 15px;
+    height: 19px;
+    background-position: -951px -318px;
+    vertical-align: middle;
+}
+
+@keyframes myfirst {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+@-webkit-keyframes myfirst
+
+/* Safari and Chrome */
+    {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.pop_style_app .pop_hd h4 {
+    font-size: 14px;
+}
+
+.pop_style_app {
+    border: 3px solid #917200;
+    background: #1e1915;
+    width: 390px;
+    position: relative;
+    color: #787777;
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 99;
+}
+
+.pop_style_app .pop_box {
+    background: #1e1915;
+    margin: 1px;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.pop_style_app .pop_hd {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffd400;
+    padding: 18px 0
+}
+
+.pop_style_app .pop_hd h3 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.pop_style_app .pop_hd h4 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.pop_style_app .pop_app {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.pop_style_app .pop_close {
+    width: 66px;
+    height: 66px;
+    background: url(//game.gtimg.cn/images/gp/public/sprites.png) -259px -198px;
+    position: absolute;
+    right: -69px;
+    top: -4px;
+}
+
+/*match*/
+.match-nav a {
+    width: 100px;
+    height: 38px;
+    position: relative;
+}
+
+.match-nav .nav {
+    float: left
+}
+
+.match-nav .nav a {
+    width: 100px;
+    height: 38px;
+    position: relative
+}
+
+.match-nav .nav a span {
+    width: 60px;
+    height: 2px;
+    background: #ffb400;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -30px;
+    display: none
+}
+
+.match-nav .nav a:hover span {
+    display: block
+}
+
+.shadow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 10
+}
+
+.wgcpop {
+    width: 306px;
+    height: 333px;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(49, 63, 81, .5);
+    padding-top: 38px;
+    box-sizing: border-box;
+    line-height: 100%;
+}
+
+.wgcpop div {
+    width: 217px;
+    height: 217px;
+    border: 4px solid #cab25d;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.wgcpop div img {
+    width: 100%;
+    height: 100%;
+}
+
+.wgcpop p {
+    color: #dceafd;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 7px;
+    line-height: 27px;
+}
+
+.close1 {
+    position: absolute;
+    right: 6px;
+    top: 7px;
+    background: url(//game.gtimg.cn/images/gp/public/close1.png) no-repeat;
+    width: 33px;
+    height: 32px;
+    cursor: pointer;
+}
+
+
+
+/*subnav*/
+.nav_yx {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    width: 115px;
+    height: 110px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: default;
+}
+
+.nav .nav_yx span {
+    font-size: 10px;
+    color: #515151;
+    font-weight: 600;
+    display: block;
+}
+
+.subnav {
+    box-sizing: border-box;
+    padding: 20px 5px 10px 5px;
+    text-align: center;
+    background: #000;
+    margin-top: 22px;
+    display: none;
+    width: 80px;
+}
+
+.nav_yx:hover .subnav {
+    display: block;
+    margin-left: 20px;
+}
+
+.subnav li {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.nav .nav_yx .subnav a {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.nav_yx:hover {
+    color: #ffb400
+}
+
+.nav_yx:hover span {
+    color: #ffb400
+}
+
+.nav .nav_yx .subnav a:hover {
+    color: #ffb400
+}
+
+.subnav {
+    width: 110px;
+}
+
+.nav_yx:hover .subnav {
+    margin-left: 7px;
+}
+
+.subnav li {
+    position: relative;
+}
+
+.subnav li i {
+    position: absolute;
+    left: 0;
+}
+
+.sjzx .subnav {
+    width: 131px;
+}
+
+.sjzx.nav_yx:hover .subnav {
+    margin-left: -1px
+}
+
+.icon_new {
+    margin-bottom: 1px
+}
+
+.footer-box {
+    color: #fff
+}
+
+.footer-box .foot_cpright {
+    width: 1200px !important;
+    margin: 0 auto;
+    color: #fff;
+    padding: 50px 20px 70px;
+}
+
+.footer-box .foot_links {
+    width: 700px !important;
+}
+
+.footer-box .foot_links .link_map span,
+.footer-box .foot_links .link_map a,
+.footer-box .foot_dark a {
+    color: #fff !important
+}
+
+.footer-box .foot_cpright .logo1 {
+    width: auto;
+    height: auto;
+}
+
+.footer-box .foot_cpright .logo1 img {
+    display: block
+}
+
+.footer-box .foot-dark {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.foot_bottom {
+    position: absolute;
+    top: 115px;
+    left: 36px;
+    color: #fff;
+    width: 314px;
+    float: right;
+    text-align: left;
+    padding-bottom: 20px
+}
+
+.foot-dark .foot_bottom {
+    font-size: 12px;
+}
+
+.foot-dark .foot_bottom p em {
+    padding-right: 3px;
+}
+
+.gicpnews-status--2 {
+    font-size: 18px;
+}
+
+/* #t6Hl8#AE7AD083F05975B46E45104CDB444238 */
+
+.top-nav-1 .top_nav_search{width: 21px;height: 21px;background: url(https://game.gtimg.cn/images/gp/web201908/top_search.png) 0 center no-repeat;line-height: 2000em;overflow: hidden;padding: 40px 0;background-size: 100%; margin-left: 20px;}
+.top-nav-1 .top_nav_search:hover{background: url(https://game.gtimg.cn/images/gp/web201908/top_search_hover.png) 0 center no-repeat;background-size: 100%;}
